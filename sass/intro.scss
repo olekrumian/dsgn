@@ -1,0 +1,84 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+        flex-basis: 50%;
+        max-width: 490px;
+        margin: 223px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+    &__header {
+        margin: 0px 0px 23px 0px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 51px;
+        color: var(--heading-color);
+    }
+
+    &__text {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--font-color);
+    }
+
+    &__ellipse {
+        flex-basis: 50%;
+
+        &-one {
+            position: relative;
+            height: 599px;
+            width: 599px;
+            background: #AF00ED;
+            filter: blur(90px);
+            border-radius: 100%;
+            z-index: 4;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 60%;
+                left: 60%;
+                transform: translate(-40%, -70%);
+                height: 235px;
+                width: 235px;
+                background: #00E9BF;
+                filter: blur(50px);
+                border-radius: 100%;
+                z-index: 3;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 419px;
+                height: 419px;
+                background: #0095E9;
+                filter: blur(70px);
+                border-radius: 100%;
+                z-index: 1;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .intro {
+        &__header {
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 79px;
+        }
+    }
+}

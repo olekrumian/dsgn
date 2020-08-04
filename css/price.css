@@ -1,0 +1,77 @@
+.price {
+  margin: 200px 0px 0px 0px; }
+  .price__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--heading-color); }
+  .price__title {
+    margin: 0px 0px 164px 0px; }
+    .price__title h2 {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color); }
+  .price__text {
+    max-width: 393px; }
+    .price__text p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--font-color); }
+  .price__cost-wrapper {
+    position: relative; }
+    .price__cost-wrapper .price__cost-day {
+      position: absolute;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color);
+      top: -30px;
+      left: 470px; }
+    .price__cost-wrapper .price__cost-value {
+      position: absolute;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color);
+      top: -30px;
+      right: 310px; }
+  .price__card {
+    margin: 90px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--heading-color); }
+  .price__card-variety {
+    margin: 0px 0px 146px 0px; }
+    .price__card-variety p {
+      width: 268px;
+      margin: 0px 0px 36px 0px;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color); }
+    .price__card-variety a {
+      position: relative;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color); }
+      .price__card-variety a svg {
+        margin: 0px 0px -2px 10px; }
+        .price__card-variety a svg path {
+          stroke: var(--heading-color); }
+  .price .variety__first {
+    margin: 0px 0px 95px 0px; }
+  .price__card-days {
+    font-weight: 500;
+    font-size: 198px;
+    line-height: 150px;
+    color: var(--heading-color); }
+  .price__card-cost {
+    padding: 0px 40px 0px 0px;
+    font-weight: 500;
+    font-size: 198px;
+    line-height: 150px;
+    color: var(--heading-color); }
+
+/*# sourceMappingURL=price.css.map */

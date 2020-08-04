@@ -1,0 +1,117 @@
+.price {
+    margin: 200px 0px 0px 0px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--heading-color);
+    }
+
+    &__title {
+        margin: 0px 0px 164px 0px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 51px;
+            color: var(--heading-color);
+        }
+    }
+
+    &__text {
+        max-width: 393px;
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--font-color);
+        }
+    }
+
+    &__cost-wrapper {
+        position: relative;
+
+        p {}
+
+        .price__cost-day {
+            position: absolute;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            top: -30px;
+            left: 470px;
+        }
+
+        .price__cost-value {
+            position: absolute;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            top: -30px;
+            right: 310px;
+        }
+    }
+
+    &__cards-wrapper {}
+
+    &__card {
+        margin: 90px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--heading-color);
+    }
+
+    &__card-variety {
+        margin: 0px 0px 146px 0px;
+
+        p {
+            width: 268px;
+            margin: 0px 0px 36px 0px;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 51px;
+            color: var(--heading-color);
+        }
+
+        a {
+            position: relative;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+
+            svg {
+                margin: 0px 0px -2px 10px;
+
+                path {
+                    stroke: var(--heading-color);
+                }
+
+            }
+        }
+    }
+
+    .variety__first {
+        margin: 0px 0px 95px 0px;
+
+    }
+
+    &__card-days {
+        font-weight: 500;
+        font-size: 198px;
+        line-height: 150px;
+        color: var(--heading-color);
+    }
+
+    &__card-cost {
+        padding: 0px 40px 0px 0px;
+        font-weight: 500;
+        font-size: 198px;
+        line-height: 150px;
+        color: var(--heading-color);
+    }
+
+}

@@ -1,0 +1,108 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px 0px 0px 0px; }
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  z-index: 41; }
+  .header__logo span {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--logo-bg-color); }
+  .header__logo p {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--heading-color); }
+
+.burger__menu-active .burger__menu-lines {
+  background-color: transparent;
+  transition: .2s linear; }
+  .burger__menu-active .burger__menu-lines::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: .2s linear; }
+  .burger__menu-active .burger__menu-lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: .2s linear; }
+.burger__menu-active .burger__menu-nav {
+  opacity: 1;
+  z-index: 20;
+  margin: 0 auto; }
+.burger__menu-active .burger__menu-overlay {
+  display: block; }
+.burger__menu-button {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  top: 8px;
+  right: 0px;
+  z-index: 30;
+  width: 30px;
+  height: 23px; }
+.burger__menu-lines, .burger__menu-lines::after, .burger__menu-lines::before {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--heading-color); }
+.burger__menu-lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .2s linear; }
+.burger__menu-lines::before {
+  content: "";
+  top: -7px;
+  transition: .2s linear; }
+.burger__menu-lines::after {
+  content: "";
+  top: 7px;
+  transition: .2s linear; }
+.burger__menu-nav {
+  text-align: center;
+  margin: 0 auto;
+  padding: 153px 0px 0px 0px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--bg-color);
+  overflow-y: auto;
+  opacity: 0;
+  transition: .2s linear; }
+.burger__menu-link {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 51px;
+  color: var(--heading-color);
+  margin: 0px 0px 60px 0px; }
+  .burger__menu-link::last-child {
+    margin: 0px 0px 0px 0px; }
+.burger__menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
