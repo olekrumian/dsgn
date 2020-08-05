@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collapse.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>collapse</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="collapse" id="collapseTop">
+                <div class="card card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <p class="text-center">
+                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseTop"
+                    aria-expanded="false" aria-controls="collapseTop">
+                    Expand/Collapse Top
+                </button>
+                <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseBottom"
+                    aria-expanded="false" aria-controls="collapseBottom">
+                    Expand/Collapse Bottom
+                </button>
+            </p>
+            <div class="collapse" id="collapseBottom">
+                <div class="card card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
