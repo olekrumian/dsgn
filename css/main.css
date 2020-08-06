@@ -571,6 +571,14 @@ input[type="checkbox"].switch:checked + label::before {
       font-size: 16px;
       line-height: 26px;
       color: var(--heading-color); }
+  .price__card-variety .collapse:not(.show) {
+    display: none; }
+  .price__card-variety .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    transition: height 0.35s ease; }
   .price__card-variety p {
     width: 275px;
     margin: 0px 0px 36px 0px;
