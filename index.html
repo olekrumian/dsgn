@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>.dsgn</title>
 </head>
@@ -159,13 +160,19 @@
                 </div><!-- ./price__cost-wrapper -->
                 <div class="price__cards-wrapper">
                     <div class="price__card">
-                        <div class="price__card-variety">
+                        <div class="price__card-variety variety__first">
                             <p>Лендинг</p>
-                            <a href="">Подробнее
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 13L14 1M14 1V8.05882M14 1H6.77778" stroke="white" stroke-width="2" />
-                                </svg>
+                            <div class="collapse" id="collapseTop">
+                                <div class="price__card-about">
+                                    Одностраничный сайт для продажи
+                                    одного товара, услуги или промо-
+                                    акции. Состоит из 4-8 блоков.
+                                </div>
+                            </div>
+
+                            <a class="price__card-link" data-toggle="collapse" data-target="#collapseTop"
+                                aria-expanded="false" aria-controls="collapseTop">
+                                Подробнее
                             </a>
                         </div>
                         <div class="price__card-days">
@@ -180,11 +187,16 @@
                     <div class="price__card">
                         <div class="price__card-variety variety__first">
                             <p>Много страничный</p>
-                            <a href="">Подробнее
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 13L14 1M14 1V8.05882M14 1H6.77778" stroke="white" stroke-width="2" />
-                                </svg>
+                            <div class="collapse" id="collapseToptwo">
+                                <div class="price__card-about">
+                                    Для информированя о компании, ее услугах, товарах и кейсах. Состоит
+                                    из структуры разной сложности.
+                                </div>
+                            </div>
+
+                            <a class="price__card-link" data-toggle="collapse" data-target="#collapseToptwo"
+                                aria-expanded="false" aria-controls="collapseToptwo">
+                                Подробнее
                             </a>
                         </div>
                         <div class="price__card-days">
@@ -199,11 +211,16 @@
                     <div class="price__card">
                         <div class="price__card-variety variety__first">
                             <p>Интернет магазин</p>
-                            <a href="">Подробнее
-                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 13L14 1M14 1V8.05882M14 1H6.77778" stroke="white" stroke-width="2" />
-                                </svg>
+                            <div class="collapse" id="collapseTopthree">
+                                <div class="price__card-about">
+                                    Для продажи товаров и услуг компании, с модулями доставки, оплаты и личным
+                                    кабинетом.
+                                </div>
+                            </div>
+
+                            <a class="price__card-link" data-toggle="collapse" data-target="#collapseTopthree"
+                                aria-expanded="false" aria-controls="collapseTopthree">
+                                Подробнее
                             </a>
                         </div>
                         <div class="price__card-days">
@@ -336,6 +353,12 @@
     </main>
 
     <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"
+        integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
     <script src="/js/main.js"></script>
     <script>
         $(window).scroll(function () {
@@ -359,6 +382,16 @@
                 .animate({
                     scrollTop: 0
                 }, 20);
+        });
+    </script>
+    <script>
+        var readMoreBtn = document.querySelector(".price__card-link"),
+            readMoreContent = document.querySelector(".price__card-link");
+
+        readMoreBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            readMoreContent.classList.toggle(".price__card-link");
+            this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
         });
     </script>
     <!-- <script>

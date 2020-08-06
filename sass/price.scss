@@ -62,13 +62,30 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid var(--heading-color);
+
+        &-about {
+            width: 275px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--font-color);
+        }
+
+        &-link {
+            cursor: pointer;
+            position: relative;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+        }
     }
 
     &__card-variety {
-        margin: 0px 0px 146px 0px;
+
 
         p {
-            width: 268px;
+            width: 275px;
             margin: 0px 0px 36px 0px;
             font-weight: bold;
             font-size: 44px;
@@ -76,41 +93,22 @@
             color: var(--heading-color);
         }
 
-        a {
-            position: relative;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--heading-color);
-
-            svg {
-                margin: 0px 0px -2px 10px;
-
-                path {
-                    stroke: var(--heading-color);
-                }
-
-            }
-        }
     }
 
-    .variety__first {
-        margin: 0px 0px 95px 0px;
-
-    }
 
     &__card-days {
         font-weight: 500;
         font-size: 198px;
-        line-height: 150px;
+        line-height: 152px;
         color: var(--heading-color);
     }
 
     &__card-cost {
+        margin: 0px 0px 105px 0px;
         padding: 0px 40px 0px 0px;
         font-weight: 500;
         font-size: 198px;
-        line-height: 150px;
+        line-height: 146px;
         color: var(--heading-color);
     }
 
