@@ -46,13 +46,13 @@
             &::before {
                 top: 0;
                 transform: rotate(45deg);
-                transition: .2s linear;
+                transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
             }
 
             &::after {
                 top: 0;
                 transform: rotate(-45deg);
-                transition: .2s linear;
+                transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
             }
         }
 
@@ -96,14 +96,14 @@
 
     &__menu-lines::before {
         content: "";
-        top: -7px;
-        transition: .2s linear;
+        top: -10px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
 
     &__menu-lines::after {
         content: "";
-        top: 7px;
-        transition: .2s linear;
+        top: 10px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
 
     &__menu {

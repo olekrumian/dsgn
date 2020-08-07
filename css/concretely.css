@@ -25,11 +25,12 @@
   .concretely__card {
     flex-basis: 28%; }
   .concretely__header {
+    max-width: 286px;
     margin: 0px 0px 16px 0px; }
     .concretely__header h3 {
       font-weight: 800;
-      font-size: 25px;
-      line-height: 31px;
+      font-size: 20px;
+      line-height: 25px;
       color: var(--heading-color); }
   .concretely__text p {
     font-size: 16px;

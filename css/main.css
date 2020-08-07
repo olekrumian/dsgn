@@ -237,14 +237,18 @@ input[type="checkbox"].switch:checked + label::before {
     top: 0;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    -webkit-transition: .2s linear;
-    transition: .2s linear; }
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
   .burger__menu-active .burger__menu-lines::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transition: .2s linear;
-    transition: .2s linear; }
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
 .burger__menu-active .burger__menu-nav {
   opacity: 1;
   z-index: 20;
@@ -274,14 +278,18 @@ input[type="checkbox"].switch:checked + label::before {
   transition: .2s linear; }
 .burger__menu-lines::before {
   content: "";
-  top: -7px;
-  -webkit-transition: .2s linear;
-  transition: .2s linear; }
+  top: -10px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
 .burger__menu-lines::after {
   content: "";
-  top: 7px;
-  -webkit-transition: .2s linear;
-  transition: .2s linear; }
+  top: 10px;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
 .burger__menu-nav {
   text-align: center;
   margin: 0 auto;
@@ -433,11 +441,12 @@ input[type="checkbox"].switch:checked + label::before {
     -ms-flex-preferred-size: 28%;
         flex-basis: 28%; }
   .concretely__header {
+    max-width: 286px;
     margin: 0px 0px 16px 0px; }
     .concretely__header h3 {
       font-weight: 800;
-      font-size: 25px;
-      line-height: 31px;
+      font-size: 20px;
+      line-height: 25px;
       color: var(--heading-color); }
   .concretely__text p {
     font-size: 16px;
@@ -570,7 +579,8 @@ input[type="checkbox"].switch:checked + label::before {
       font-weight: normal;
       font-size: 16px;
       line-height: 26px;
-      color: var(--heading-color); }
+      color: var(--heading-color);
+      border-bottom: 1px solid var(--heading-color); }
   .price__card-variety .collapse:not(.show) {
     display: none; }
   .price__card-variety .collapsing {
@@ -653,7 +663,7 @@ input[type="checkbox"].switch:checked + label::before {
       font-size: 16px;
       line-height: 26px;
       color: var(--font-color); }
-  .mywork__card-icon svg path {
+  .mywork__card-icon svg line {
     stroke: var(--heading-color); }
 
 .contact {
@@ -707,7 +717,7 @@ input[type="checkbox"].switch:checked + label::before {
       font-size: 16px;
       line-height: 26px;
       color: var(--font-color); }
-  .contact__card-icon svg path {
+  .contact__card-icon svg line {
     stroke: var(--heading-color); }
 
 #uparrow {

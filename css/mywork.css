@@ -1,0 +1,47 @@
+.mywork {
+  margin: 200px 0px 0px 0px; }
+  .mywork__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--heading-color); }
+  .mywork__title {
+    margin: 0px 0px 138px 0px; }
+    .mywork__title h2 {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color); }
+  .mywork_text {
+    max-width: 393px; }
+    .mywork_text p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--font-color); }
+  .mywork__card-link {
+    color: var(--heading-color); }
+  .mywork__card {
+    margin: 82px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--heading-color);
+    transition: .1s linear; }
+  .mywork__card-name {
+    margin: 0px 0px 156px 0px; }
+    .mywork__card-name h3 {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color); }
+  .mywork__card-description {
+    max-width: 394px; }
+    .mywork__card-description p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--font-color); }
+  .mywork__card-icon svg line {
+    stroke: var(--heading-color); }
+
+/*# sourceMappingURL=mywork.css.map */
