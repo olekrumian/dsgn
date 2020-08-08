@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 38px 0px 0px 0px; }
+  padding: 35px 0px 0px 0px; }
 
 .header__logo {
   display: flex;
@@ -30,15 +30,15 @@
 
 .burger__menu-active .burger__menu-lines {
   background-color: transparent;
-  transition: .2s linear; }
+  transition: 0.1s linear; }
   .burger__menu-active .burger__menu-lines::before {
     top: 0;
     transform: rotate(45deg);
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s; }
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s; }
   .burger__menu-active .burger__menu-lines::after {
     top: 0;
     transform: rotate(-45deg);
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s; }
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s; }
 .burger__menu-active .burger__menu-nav {
   opacity: 1;
   z-index: 20;
@@ -63,15 +63,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: .2s linear; }
+  transition: 0.1s linear; }
 .burger__menu-lines::before {
   content: "";
   top: -10px;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s; }
 .burger__menu-lines::after {
   content: "";
   top: 10px;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s; }
 .burger__menu-nav {
   text-align: center;
   margin: 0 auto;

@@ -43,5 +43,9 @@
       color: var(--font-color); }
   .mywork__card-icon svg line {
     stroke: var(--heading-color); }
+  .mywork #laweta {
+    position: absolute;
+    width: 480px;
+    height: 300px; }
 
 /*# sourceMappingURL=mywork.css.map */

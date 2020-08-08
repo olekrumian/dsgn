@@ -241,7 +241,9 @@
                     </div>
                 </div><!-- ./mywork__wrapper -->
                 <div class="mywork__cards-wrapper">
-                    <a href="http://laweta.dp.ua" class="mywork__card-link" title="laweta.dp.ua" target="_blank">
+                    <a href="http://laweta.dp.ua" id="laweta__link" class="mywork__card-link" title="laweta.dp.ua"
+                        target="_blank">
+                        <img src="img/cursor/laweta.png" width="30%" id="laweta" alt="laweta">
                         <div class="mywork__card">
                             <div class="mywork__card-name">
                                 <h3>Laweta</h3>
@@ -260,9 +262,10 @@
                             </div>
                         </div>
                     </a>
-                    <a href="http://4smart.in.ua" class="mywork__card-link" title="4smart.in.ua" target="_blank">
+                    <a href="http://4smart.in.ua" id="4smart__link" class="mywork__card-link" title="4smart.in.ua"
+                        target="_blank">
                         <div class="mywork__card">
-                            <div class="mywork__card-name">
+                            <div class="mywork__card-name 4smart">
                                 <h3>4Smart</h3>
                             </div>
                             <div class="mywork__card-description">
@@ -401,6 +404,18 @@
             event.preventDefault();
             readMoreContent.classList.toggle(".price__card-link");
             this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
+        });
+
+        $("#laweta").hide();
+        $("#laweta__link").mousemove(function (e) {
+            $("#laweta").show();
+            $("#laweta").css({
+                left: e.pageX,
+                top: e.pageY
+            });
+        });
+        $("#laweta__link").mouseleave(function () {
+            $("#laweta").hide();
         });
     </script><!-- collapse -->
     <!-- <script>

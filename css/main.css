@@ -233,24 +233,24 @@ input[type="checkbox"].switch:checked + label::before {
 
 .burger__menu-active .burger__menu-lines {
   background-color: transparent;
-  -webkit-transition: .2s linear;
-  transition: .2s linear; }
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear; }
   .burger__menu-active .burger__menu-lines::before {
     top: 0;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
+    -webkit-transition: top 0.1s linear, -webkit-transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, -webkit-transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s, -webkit-transform 0.1s ease-in 0.1s; }
   .burger__menu-active .burger__menu-lines::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
+    -webkit-transition: top 0.1s linear, -webkit-transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, -webkit-transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s, -webkit-transform 0.1s ease-in 0.1s; }
 .burger__menu-active .burger__menu-nav {
   opacity: 1;
   z-index: 20;
@@ -276,22 +276,22 @@ input[type="checkbox"].switch:checked + label::before {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: .2s linear;
-  transition: .2s linear; }
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear; }
 .burger__menu-lines::before {
   content: "";
   top: -10px;
-  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
+  -webkit-transition: top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
+  transition: top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in; }
 .burger__menu-lines::after {
   content: "";
   top: 10px;
-  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
+  -webkit-transition: top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
+  transition: top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+  transition: transform 0.1s ease-in, top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in; }
 .burger__menu-nav {
   text-align: center;
   margin: 0 auto;
@@ -667,6 +667,10 @@ input[type="checkbox"].switch:checked + label::before {
       color: var(--font-color); }
   .mywork__card-icon svg line {
     stroke: var(--heading-color); }
+  .mywork #laweta {
+    position: absolute;
+    width: 480px;
+    height: 300px; }
 
 .contact {
   margin: 200px 0px 0px 0px;
@@ -701,11 +705,15 @@ input[type="checkbox"].switch:checked + label::before {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border-bottom: 1px solid var(--heading-color); }
-    .contact__card:hover, .contact__card:hover h3, .contact__card:hover p, .contact__card:hover svg line {
-      stroke: var(--bg-color);
-      color: var(--bg-color);
-      background-color: var(--heading-color); }
+    border-bottom: 1px solid var(--heading-color);
+    /* &:hover,
+    &:hover h3,
+    &:hover p,
+    &:hover svg line {
+        stroke: var(--bg-color);
+        color: var(--bg-color);
+        background-color: var(--heading-color);
+    } */ }
   .contact__card-social {
     margin: 0px 0px 156px 0px;
     width: 240px;

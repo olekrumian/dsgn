@@ -43,8 +43,6 @@
         align-items: flex-start;
         border-bottom: 1px solid var(--heading-color);
         transition: .1s linear;
-
-
     }
 
     &__card-name {
@@ -77,6 +75,12 @@
             }
 
         }
+    }
+
+    #laweta {
+        position: absolute;
+        width: 480px;
+        height: 300px;
     }
 
 }
