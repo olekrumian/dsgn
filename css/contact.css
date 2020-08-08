@@ -20,10 +20,14 @@
       line-height: 26px;
       color: var(--font-color); }
   .contact__card {
-    margin: 82px 0px 0px 0px;
+    padding: 82px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--heading-color); }
+    .contact__card:hover, .contact__card:hover h3, .contact__card:hover p, .contact__card:hover svg line {
+      stroke: var(--bg-color);
+      color: var(--bg-color);
+      background-color: var(--heading-color); }
   .contact__card-social {
     margin: 0px 0px 156px 0px;
     width: 240px;

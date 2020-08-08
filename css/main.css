@@ -2,13 +2,15 @@
   --font-color: #CECECE;
   --bg-color: #000000;
   --heading-color: #ffffff;
-  --logo-bg-color: #FF0000; }
+  --logo-bg-color: #FF0000;
+  --invers-color: #000000; }
 
 .main-theme-active {
   --font-color: #3A3A3A;
   --bg-color: #ffffff;
   --heading-color: #000000;
-  --logo-bg-color: #FF0000; }
+  --logo-bg-color: #FF0000;
+  --invers-color: #ffffff; }
 
 .main-element {
   width: 100%;
@@ -200,7 +202,7 @@ input[type="checkbox"].switch:checked + label::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 38px 0px 0px 0px; }
+  padding: 35px 0px 0px 0px; }
 
 .header__logo {
   display: -webkit-box;
@@ -692,7 +694,7 @@ input[type="checkbox"].switch:checked + label::before {
       line-height: 26px;
       color: var(--font-color); }
   .contact__card {
-    margin: 82px 0px 0px 0px;
+    padding: 82px 0px 0px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -700,6 +702,10 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color); }
+    .contact__card:hover, .contact__card:hover h3, .contact__card:hover p, .contact__card:hover svg line {
+      stroke: var(--bg-color);
+      color: var(--bg-color);
+      background-color: var(--heading-color); }
   .contact__card-social {
     margin: 0px 0px 156px 0px;
     width: 240px;
