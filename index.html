@@ -397,39 +397,43 @@
         });
     </script><!-- upbutton-->
     <script>
-        var readMoreBtn = document.querySelector(".price__card-link"),
-            readMoreContent = document.querySelector(".price__card-link");
-
-        readMoreBtn.addEventListener("click", function (event) {
-            event.preventDefault();
-            readMoreContent.classList.toggle(".price__card-link");
-            this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
-        });
-
-        $("#laweta").hide();
-        $("#laweta__link").mousemove(function (e) {
-            $("#laweta").show();
-            $("#laweta").css({
-                left: e.pageX,
-                top: e.pageY
-            });
-        });
-        $("#laweta__link").mouseleave(function () {
-            $("#laweta").hide();
-        });
-    </script><!-- collapse -->
-    <!-- <script>
         $(document).ready(function () {
 
+
+            var readMoreBtn = document.querySelector(".price__card-link"),
+                readMoreContent = document.querySelector(".price__card-link");
+
+            readMoreBtn.addEventListener("click", function (event) {
+                event.preventDefault();
+                readMoreContent.classList.toggle(".price__card-link");
+                this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
+            });
+
+            // modal img
+            $("#laweta").hide();
+            $("#laweta__link").mousemove(function (e) {
+                $("#laweta").show();
+                $("#laweta").css({
+                    left: e.pageX,
+                    top: e.pageY
+                });
+            });
+            $("#laweta__link").mouseleave(function () {
+                $("#laweta").hide();
+            });
+
+            /* // esc 
             $(document).keydown(function (e) {
                 if (e.keyCode === 27) {
                     e.stopPropagation();
-                    $('.burger__menu').fadeOut();
+                    $('.burger__menu-active').removeClass();
                 }
-
-            });
+            }); */
         });
-    </script> -->
+    </script><!-- collapse -->
+    <script>
+
+    </script>
 </body>
 
 </html>
