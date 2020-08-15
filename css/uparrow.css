@@ -6,10 +6,13 @@
   cursor: pointer;
   position: fixed;
   z-index: 1;
-  display: none; }
-  #uparrow svg rect {
-    stroke: var(--heading-color); }
-  #uparrow svg path {
-    stroke: var(--heading-color); }
+  display: none;
+}
 
-/*# sourceMappingURL=uparrow.css.map */
+#uparrow svg rect {
+  stroke: var(--heading-color);
+}
+
+#uparrow svg path {
+  stroke: var(--heading-color);
+}
