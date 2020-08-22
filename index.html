@@ -50,7 +50,7 @@
                 </div>
             </section><!-- ./Intro -->
             <section id="section_1" class="concretely">
-                <div class="concretely__wrapper">
+                <div class="concretely__wrapper underline">
                     <div class="concretely__title">
                         <h2>А если конкретнее</h2>
                     </div>
@@ -408,8 +408,10 @@
                 readMoreContent.classList.toggle(".price__card-link");
                 this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
             });
-
-            /* // modal img
+        });
+    </script><!-- collapse -->
+    <script>
+        /* // modal img
             $("#laweta").hide();
             $("#laweta__link").mousemove(function (e) {
                 $("#laweta").show();
@@ -422,18 +424,14 @@
                 $("#laweta").hide();
             }); */
 
-            /* // esc 
-            $(document).keydown(function (e) {
-                if (e.keyCode === 27) {
-                    e.stopPropagation();
-                    $('.burger__menu-active').removeClass();
-                }
-            }); */
-        });
-    </script><!-- collapse -->
-    <script>
-
-    </script>
+        /* // esc 
+        $(document).keydown(function (e) {
+            if (e.keyCode === 27) {
+                e.stopPropagation();
+                $('.burger__menu-active').removeClass();
+            }
+        }); */
+    </script> <!-- mouseover window -->
 </body>
 
 </html>
