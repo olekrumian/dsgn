@@ -1,0 +1,108 @@
+.header__toggle {
+  margin: 0px 0px 0px -47px; }
+
+input[type="checkbox"].switch {
+  position: absolute;
+  margin: 16px 0 0 16px; }
+
+input[type="checkbox"].switch + label {
+  position: relative;
+  padding: 5px 0 0 50px;
+  line-height: 2.0em;
+  width: 45px;
+  height: 30px;
+  z-index: 41; }
+
+input[type="checkbox"].switch + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 45px;
+  /* x*5 */
+  height: 30px;
+  /* x*3 */
+  border-radius: 20px;
+  /* x*2 */
+  background-color: var(--heading-color);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="checkbox"].switch + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 4px;
+  top: 4px;
+  width: 22px;
+  /* x*3 */
+  height: 22px;
+  /* x*3 */
+  border-radius: 50%;
+  /* x*2 */
+  background: var(--bg-color);
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="checkbox"].switch:checked + label::after {
+  margin-left: 15px; }
+
+input[type="checkbox"].switch:checked + label::before {
+  background: var(--heading-color); }
+
+@media (min-width: 1900px) {
+  input[type="checkbox"].switch {
+    position: absolute;
+    margin: 16px 0 0 16px; }
+
+  input[type="checkbox"].switch + label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2.0em;
+    width: 60px;
+    height: 40px;
+    z-index: 41; }
+
+  input[type="checkbox"].switch + label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 60px;
+    /* x*5 */
+    height: 40px;
+    /* x*3 */
+    border-radius: 20px;
+    /* x*2 */
+    background-color: var(--heading-color);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+
+  input[type="checkbox"].switch + label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 5px;
+    width: 30px;
+    /* x*3 */
+    height: 30px;
+    /* x*3 */
+    border-radius: 50%;
+    /* x*2 */
+    background: var(--bg-color);
+    border: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+
+  input[type="checkbox"].switch:checked + label::after {
+    margin-left: 20px; }
+
+  input[type="checkbox"].switch:checked + label::before {
+    background: var(--heading-color); } }
+@media (max-width: 576px) {
+  .header__toggle {
+    margin: 3px 0px 0px -15px; } }

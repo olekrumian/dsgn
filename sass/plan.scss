@@ -75,3 +75,43 @@
     }
 
 }
+
+@media (max-width: 576px) {
+    .plan {
+        margin: 100px 0px 0px 0px;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__text {
+            max-width: 330px;
+        }
+
+        &__cards-wrapper {
+            .plan__card {
+                margin: 46px 0px 0px 0px;
+                padding: 0px 0px 42px 0px;
+
+                flex-direction: column;
+
+                &-num {
+                    margin: 0px 0px 40px 0px;
+
+                }
+
+                &-title {
+                    margin: 0px 0px 16px 0px;
+
+                }
+            }
+        }
+    }
+}

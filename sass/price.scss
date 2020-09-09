@@ -82,6 +82,10 @@
 
 
         }
+
+        &-modal {
+            display: none;
+        }
     }
 
     &__card-variety {
@@ -125,4 +129,83 @@
         color: var(--heading-color);
     }
 
+}
+
+@media (max-width: 576px) {
+    .price {
+        margin: 100px 0px 0px 0px;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__text {
+            max-width: 330px;
+        }
+
+        .price__cards-wrapper {
+            .price__card {
+                margin: 35px 0px 0px 0px;
+                display: flex;
+                flex-direction: column;
+
+                &-variety {
+                    p {
+                        margin: 0px 0px 23px 0px;
+
+                    }
+                }
+
+                &-days {
+                    font-weight: 500;
+                    font-size: 78px;
+                    line-height: 107px;
+                    order: 1;
+                }
+
+                &-cost {
+                    font-weight: 500;
+                    font-size: 78px;
+                    line-height: 107px;
+                    order: 2;
+                }
+
+                &-link {
+                    display: none;
+                    margin: 0;
+                }
+
+                .collapse {
+                    margin: 0;
+                }
+
+                &-modal {
+                    display: block;
+
+                    &-link {
+
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+
+            }
+        }
+
+        .price__cost-day {
+            display: none;
+        }
+
+        .price__cost-value {
+            display: none;
+        }
+    }
 }

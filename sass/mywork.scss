@@ -42,7 +42,6 @@
         justify-content: space-between;
         align-items: flex-start;
         border-bottom: 1px solid var(--heading-color);
-        transition: .1s linear;
     }
 
     &__card-name {
@@ -77,10 +76,70 @@
         }
     }
 
+    &__card-links {
+        display: none;
+    }
+
+
     #laweta {
         position: absolute;
         width: 480px;
         height: 300px;
     }
 
+}
+
+@media (max-width: 576px) {
+    .mywork {
+        margin: 100px 0px 0px 0px;
+
+        &__wrapper {
+            padding: 0px 0px 42px 0px;
+
+            flex-direction: column;
+
+            .mywork__title {
+                margin: 0px 0px 16px 0px;
+
+            }
+
+            .mywork_text {
+                max-width: 330px;
+            }
+        }
+
+        .mywork__cards-wrapper {
+
+            .mywork__card {
+                margin: 35px 0px 0px 0px;
+                padding: 0px 0px 42px 0px;
+                flex-direction: column;
+
+                &-name {
+                    margin: 0px 0px 16px 0px;
+                }
+
+                &-description {
+                    margin: 0px 0px 38px 0px;
+                    max-width: 330px;
+                }
+
+                &-icon {
+                    display: none;
+                }
+
+                &-links {
+                    display: block;
+
+                    .links {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: var(--heading-color);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }

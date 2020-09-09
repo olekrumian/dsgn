@@ -123,3 +123,9 @@ input[type="checkbox"].switch:checked+label::before {
         background: var(--heading-color);
     }
 }
+
+@media (max-width: 576px) {
+    .header__toggle {
+        margin: 3px 0px 0px -15px;
+    }
+}
