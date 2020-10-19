@@ -19,3 +19,28 @@
 
     }
 }
+
+@media (max-width: 576px) {
+    #uparrow {
+        left: 45%;
+        transform: translate(-50%, 0);
+        height: 80px;
+        width: 40px;
+        bottom: 10px;
+        cursor: pointer;
+        position: fixed;
+        z-index: 1;
+        display: none;
+
+        svg {
+            rect {
+                stroke: var(--heading-color);
+            }
+
+            path {
+                stroke: var(--heading-color);
+            }
+
+        }
+    }
+}

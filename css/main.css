@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-theme {
   --font-color: #CECECE;
   --bg-color: #000000;
@@ -688,37 +689,85 @@ input[type="checkbox"].switch:checked + label::before {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
       .price .price__cards-wrapper .price__card-variety p {
-        margin: 0px 0px 23px 0px; }
+        margin: 0px 0px 42px 0px; }
       .price .price__cards-wrapper .price__card-days {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         font-weight: 500;
         font-size: 78px;
         line-height: 107px;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
+        .price .price__cards-wrapper .price__card-days::before {
+          content: 'Дни';
+          position: absolute;
+          top: -20px;
+          left: 3px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px; }
       .price .price__cards-wrapper .price__card-cost {
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin: 0px 0px 21px 0px;
         font-weight: 500;
         font-size: 78px;
         line-height: 107px;
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2; }
+        .price .price__cards-wrapper .price__card-cost::before {
+          content: 'Цена ($$$)';
+          position: absolute;
+          top: -20px;
+          left: -2px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px; }
       .price .price__cards-wrapper .price__card-link {
         display: none;
         margin: 0; }
       .price .price__cards-wrapper .price__card .collapse {
         margin: 0; }
       .price .price__cards-wrapper .price__card-modal {
-        display: block; }
+        margin: 0px 0px 42px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
         .price .price__cards-wrapper .price__card-modal-link {
+          text-decoration: underline;
           font-weight: normal;
           font-size: 16px;
-          line-height: 26px; }
+          line-height: 26px;
+          color: var(--heading-color); }
     .price .price__cost-day {
       display: none; }
     .price .price__cost-value {
@@ -747,8 +796,6 @@ input[type="checkbox"].switch:checked + label::before {
       font-size: 16px;
       line-height: 26px;
       color: var(--font-color); }
-  .mywork__card-link {
-    color: var(--heading-color); }
   .mywork__card {
     margin: 82px 0px 0px 0px;
     display: -webkit-box;
@@ -760,6 +807,12 @@ input[type="checkbox"].switch:checked + label::before {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     border-bottom: 1px solid var(--heading-color); }
   .mywork__card-name {
     margin: 0px 0px 156px 0px; }
@@ -779,6 +832,8 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color); }
   .mywork__card-links {
     display: none; }
+  .mywork__card-link {
+    color: var(--heading-color); }
   .mywork #laweta {
     position: absolute;
     width: 480px;
@@ -797,28 +852,37 @@ input[type="checkbox"].switch:checked + label::before {
         margin: 0px 0px 16px 0px; }
       .mywork__wrapper .mywork_text {
         max-width: 330px; }
-    .mywork .mywork__cards-wrapper .mywork__card {
+    .mywork__card {
       margin: 35px 0px 0px 0px;
       padding: 0px 0px 42px 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .mywork .mywork__cards-wrapper .mywork__card-name {
-        margin: 0px 0px 16px 0px; }
-      .mywork .mywork__cards-wrapper .mywork__card-description {
-        margin: 0px 0px 38px 0px;
-        max-width: 330px; }
-      .mywork .mywork__cards-wrapper .mywork__card-icon {
-        display: none; }
-      .mywork .mywork__cards-wrapper .mywork__card-links {
-        display: block; }
-        .mywork .mywork__cards-wrapper .mywork__card-links .links {
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 26px;
-          color: var(--heading-color);
-          text-decoration: underline; } }
+    .mywork__card-name {
+      margin: 0px 0px 16px 0px; }
+    .mywork__card-description {
+      margin: 0px 0px 38px 0px;
+      max-width: 330px; }
+    .mywork__card-icon {
+      display: none; }
+    .mywork__card-links {
+      display: block; }
+      .mywork__card-links .links {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--heading-color);
+        text-decoration: underline; } }
 .contact {
   margin: 200px 0px 0px 0px;
   padding: 0px 0px 240px 0px; }
@@ -861,6 +925,8 @@ input[type="checkbox"].switch:checked + label::before {
         color: var(--bg-color);
         background-color: var(--heading-color);
     } */ }
+    .contact__card-send {
+      display: none; }
   .contact__card-social {
     margin: 0px 0px 156px 0px;
     width: 240px;
@@ -881,6 +947,52 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card-icon svg line {
     stroke: var(--heading-color); }
 
+@media (max-width: 576px) {
+  .contact {
+    margin: 100px 0px 0px 0px;
+    padding: 0px 0px 140px 0px; }
+    .contact__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .contact__title {
+      margin: 0px 0px 16px 0px; }
+      .contact__title h2 {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 51px; }
+    .contact__text {
+      max-width: 305px;
+      padding: 0px 0px 42px 0px; }
+    .contact__card {
+      padding: 35px 0px 0px 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .contact__card-send {
+        display: block; }
+    .contact__card-social {
+      margin: 0px 0px 16px 0px; }
+    .contact__card-links {
+      margin: 0px 0px 38px 0px; }
+    .contact__card-icon {
+      display: none; }
+    .contact__card-send {
+      padding: 0px 0px 42px 0px; }
+      .contact__card-send a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--heading-color);
+        text-decoration: underline; } }
 #uparrow {
   height: 80px;
   width: 40px;
@@ -894,3 +1006,20 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color); }
   #uparrow svg path {
     stroke: var(--heading-color); }
+
+@media (max-width: 576px) {
+  #uparrow {
+    left: 45%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 80px;
+    width: 40px;
+    bottom: 10px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    display: none; }
+    #uparrow svg rect {
+      stroke: var(--heading-color); }
+    #uparrow svg path {
+      stroke: var(--heading-color); } }

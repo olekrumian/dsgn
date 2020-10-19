@@ -29,18 +29,13 @@
         }
     }
 
-    &__cards-wrapper {}
-
-    &__card-link {
-        color: var(--heading-color);
-
-    }
-
     &__card {
         margin: 82px 0px 0px 0px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
         border-bottom: 1px solid var(--heading-color);
     }
 
@@ -81,6 +76,14 @@
     }
 
 
+    .mywork__card {}
+
+    &__card-link {
+        color: var(--heading-color);
+
+    }
+
+
     #laweta {
         position: absolute;
         width: 480px;
@@ -108,38 +111,42 @@
             }
         }
 
-        .mywork__cards-wrapper {
+        &__card-link {}
 
-            .mywork__card {
-                margin: 35px 0px 0px 0px;
-                padding: 0px 0px 42px 0px;
-                flex-direction: column;
+        &__card {
+            margin: 35px 0px 0px 0px;
+            padding: 0px 0px 42px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
 
-                &-name {
-                    margin: 0px 0px 16px 0px;
-                }
+        &__card-name {
+            margin: 0px 0px 16px 0px;
+        }
 
-                &-description {
-                    margin: 0px 0px 38px 0px;
-                    max-width: 330px;
-                }
+        &__card-description {
+            margin: 0px 0px 38px 0px;
+            max-width: 330px;
+        }
 
-                &-icon {
-                    display: none;
-                }
+        &__card-icon {
+            display: none;
+        }
 
-                &-links {
-                    display: block;
+        &__card-links {
+            display: block;
 
-                    .links {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        text-decoration: underline;
-                    }
-                }
+            .links {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--heading-color);
+                text-decoration: underline;
             }
         }
+
+
     }
 }
