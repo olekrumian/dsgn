@@ -181,7 +181,7 @@
                             <p>300</p>
                         </div>
                         <div class="price__card-modal">
-                            <a href="" class="price__card-modal-link">Подробнее</a>
+                            <a class="price__card-modal-link land__modal">Подробнее</a>
                         </div>
                     </div>
                 </div><!-- ./price__cards-wrapper -->
@@ -206,7 +206,9 @@
                         <div class="price__card-cost">
                             <p>600</p>
                         </div>
-                        <div class="price__card-modal"><a href="" class="price__card-modal-link">Подробнее</a></div>
+                        <div class="price__card-modal">
+                            <a class="price__card-modal-link multi__modal">Подробнее</a>
+                        </div>
                     </div>
                 </div><!-- ./price__cards-wrapper -->
                 <div class="price__cards-wrapper">
@@ -231,7 +233,9 @@
                         <div class="price__card-cost">
                             <p>700</p>
                         </div>
-                        <div class="price__card-modal"><a href="" class="price__card-modal-link">Подробнее</a></div>
+                        <div class="price__card-modal">
+                            <a class="price__card-modal-link store__modal">Подробнее</a>
+                        </div>
                     </div>
                 </div><!-- ./price__cards-wrapper -->
             </section><!-- ./price -->
@@ -389,6 +393,52 @@
                 <path d="M39.5 11V29M39.5 11L45 16.2105M39.5 11L34 16.2105" stroke="white" />
             </svg>
         </div><!-- ./uparrow -->
+        <!-- Modal window landing -->
+        <div class="modal__land">
+            <h3 class="modal__title">Лендинг</h3>
+            <p class="modal__text">Одностраничный сайт для продажи одного товара, услуги или промо-акции. Состоит из 4-8
+                блоков.</p>
+            <div class="modal__close">
+                <picture>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.12134" width="30" height="3" transform="rotate(45 2.12134 0)" fill="white" />
+                        <rect y="21.2133" width="30" height="3" transform="rotate(-45 0 21.2133)" fill="white" />
+                    </svg>
+                </picture>
+            </div>
+
+        </div>
+        <!-- ./Modal window -->
+        <!-- Modal window Multi -->
+        <div class="modal__multi">
+            <h3 class="modal__title">Многостраничный</h3>
+            <p class="modal__text">Для информированя о компании, ее услугах, товарах и кейсах. Состоит из структуры разной сложности.</p>
+            <div class="modal__closem">
+                <picture>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.12134" width="30" height="3" transform="rotate(45 2.12134 0)" fill="white" />
+                        <rect y="21.2133" width="30" height="3" transform="rotate(-45 0 21.2133)" fill="white" />
+                    </svg>
+                </picture>
+            </div>
+
+        </div>
+        <!-- ./Modal window -->
+        <!-- Modal window store -->
+        <div class="modal__store">
+            <h3 class="modal__title">Интернет магазин</h3>
+            <p class="modal__text">Для продажи товаров и услуг компании, с модулями доставки, оплаты и личным кабинетом.</p>
+            <div class="modal__closes">
+                <picture>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.12134" width="30" height="3" transform="rotate(45 2.12134 0)" fill="white" />
+                        <rect y="21.2133" width="30" height="3" transform="rotate(-45 0 21.2133)" fill="white" />
+                    </svg>
+                </picture>
+            </div>
+
+        </div>
+        <!-- ./Modal window -->
     </main>
 
     <script src="/js/jquery-3.5.1.min.js"></script>
@@ -396,7 +446,7 @@
     <script src="/js/main.js"></script>
     <script>
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 5500) {
+            if ($(this).scrollTop() > 5000) {
                 if ($("#uparrow").is(":hidden")) {
                     $("#uparrow")
                         .css({
@@ -430,6 +480,49 @@
             });
         });
     </script><!-- collapse -->
+    <script>
+        const modal = document.querySelector('.modal__land');
+        const modalM = document.querySelector('.modal__multi');
+        const modalS = document.querySelector('.modal__store');
+        const btnOpen = document.querySelector('.land__modal');
+        const btnOpenM = document.querySelector('.multi__modal');
+        const btnOpenS = document.querySelector('.store__modal');
+        const btnClose = document.querySelector('.modal__close');
+        const btnCloseM = document.querySelector('.modal__closem');
+        const btnCloseS = document.querySelector('.modal__closes');
+
+        // overlay
+        const overlay = document.createElement('div')
+        overlay.classList.add('overlay');
+        document.body.insertAdjacentElement("beforeend", overlay);
+        // openModal
+        const openMenu = () => {
+            modal.classList.add('modal__land-show');
+            overlay.classList.add('active')
+        };
+        const openMenuM = () => {
+            modalM.classList.add('modal__multi-show');
+            overlay.classList.add('active')
+        };
+        const openMenuS = () => {
+            modalS.classList.add('modal__store-show');
+            overlay.classList.add('active')
+        };
+        // closeModal
+        const closeMenu = () => {
+            modal.classList.remove('modal__land-show');
+            modalM.classList.remove('modal__multi-show');
+            modalS.classList.remove('modal__store-show');
+            overlay.classList.remove('active')
+        };
+        btnOpen.addEventListener('click', openMenu);
+        btnOpenM.addEventListener('click', openMenuM);
+        btnOpenS.addEventListener('click', openMenuS);
+        btnClose.addEventListener('click', closeMenu);
+        btnCloseM.addEventListener('click', closeMenu);
+        btnCloseS.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+    </script> <!-- modal mobile window -->
     <script>
         /* // modal img
             $("#laweta").hide();
