@@ -65,3 +65,12 @@
     max-width: 330px; }
   .intro__ellipse {
     display: none; } }
+@media screen and (orientation: landscape) and (max-width: 992px) {
+  .intro {
+    margin: 0 10%; }
+    .intro__wrapper {
+      margin: 100px 0px 0px 0px;
+      max-width: 543px;
+      flex-basis: 100%; }
+    .intro__ellipse {
+      display: none; } }

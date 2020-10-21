@@ -38,6 +38,7 @@
 .burger {
 
     &__menu-active {
+        z-index: 1000;
 
         .burger__menu-lines {
             background-color: transparent;
@@ -158,6 +159,12 @@
 }
 
 @media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 992px) {
     .container {
         width: 90%;
     }

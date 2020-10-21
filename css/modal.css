@@ -101,5 +101,105 @@
   .overlay.active {
     opacity: 0.9;
     pointer-events: all; } }
+@media screen and (orientation: landscape) and (max-width: 992px) {
+  .modal__land {
+    display: block;
+    width: 70%;
+    position: fixed;
+    bottom: -190px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--bg-color);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 100;
+    transition: ease-in-out .2s; }
+    .modal__land-show {
+      bottom: 0px;
+      transition: ease-in-out .2s;
+      overflow: hidden; }
+  .modal__multi {
+    display: block;
+    width: 70%;
+    position: fixed;
+    bottom: -190px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--bg-color);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 100;
+    transition: ease-in-out .2s; }
+    .modal__multi-show {
+      bottom: 0px;
+      transition: ease-in-out .2s;
+      overflow: hidden; }
+  .modal__store {
+    display: block;
+    width: 70%;
+    position: fixed;
+    bottom: -190px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--bg-color);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 100;
+    transition: ease-in-out .2s; }
+    .modal__store-show {
+      bottom: 0px;
+      transition: ease-in-out .2s;
+      overflow: hidden; }
+  .modal__title {
+    padding: 27px 0px 16px 30px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px; }
+  .modal__text {
+    padding: 0px 0px 27px 30px;
+    max-width: 481px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px; }
+  .modal__close {
+    position: absolute;
+    top: 28px;
+    right: 28px; }
+    .modal__close picture svg {
+      stroke: var(--heading-color); }
+      .modal__close picture svg rect {
+        fill: var(--heading-color); }
+  .modal__closem {
+    position: absolute;
+    top: 28px;
+    right: 27px; }
+    .modal__closem picture svg {
+      stroke: var(--heading-color); }
+      .modal__closem picture svg rect {
+        fill: var(--heading-color); }
+  .modal__closes {
+    position: absolute;
+    top: 28px;
+    right: 27px; }
+    .modal__closes picture svg {
+      stroke: var(--heading-color); }
+      .modal__closes picture svg rect {
+        fill: var(--heading-color); }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #cecece;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: 0;
+    pointer-events: none; }
+
+  .overlay.active {
+    opacity: 0.9;
+    pointer-events: all; } }
 
 /*# sourceMappingURL=modal.css.map */

@@ -40,7 +40,7 @@
     }
 
     &__card-num {
-        margin: 0px 0px 103px 0px;
+        margin: 0px 0px 103px -15px;
 
         max-width: 205px;
 
@@ -103,13 +103,57 @@
                 flex-direction: column;
 
                 &-num {
-                    margin: 0px 0px 40px 0px;
+                    margin: 0px 0px 40px -15px;
 
                 }
 
                 &-title {
                     margin: 0px 0px 16px 0px;
 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 992px) {
+    .plan {
+        margin: 100px 10% 0px 10%;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__text {
+            max-width: 546px;
+        }
+
+        &__cards-wrapper {
+            .plan__card {
+                margin: 46px 0px 0px 0px;
+                padding: 0px 0px 42px 0px;
+
+                flex-direction: column;
+
+                &-num {
+                    margin: 0px 0px 40px -15px;
+
+                }
+
+                &-title {
+                    margin: 0px 0px 16px 0px;
+
+                }
+
+                &-text {
+                    max-width: 556px;
                 }
             }
         }
