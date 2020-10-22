@@ -79,8 +79,6 @@
             line-height: 26px;
             color: var(--heading-color);
             border-bottom: 1px solid var(--heading-color);
-
-
         }
 
         &-modal {
@@ -225,11 +223,11 @@
                     flex-basis: 100%;
 
                     &-link {
-                        text-decoration: underline;
                         font-weight: normal;
                         font-size: 16px;
                         line-height: 26px;
                         color: var(--heading-color);
+                        border-bottom: 1px solid var(--heading-color);
                     }
                 }
 
@@ -342,11 +340,11 @@
                     flex-basis: 100%;
 
                     &-link {
-                        text-decoration: underline;
                         font-weight: normal;
                         font-size: 16px;
                         line-height: 26px;
                         color: var(--heading-color);
+                        border-bottom: 1px solid var(--heading-color);
                     }
                 }
 

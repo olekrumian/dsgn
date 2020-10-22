@@ -176,7 +176,6 @@
                                     акции. Состоит из 4-8 блоков.
                                 </div>
                             </div>
-
                             <a class="price__card-link" data-toggle="collapse" data-target="#collapseTop"
                                 aria-expanded="false" aria-controls="collapseTop">
                                 Подробнее
@@ -482,15 +481,14 @@
         });
     </script><!-- upbutton-->
     <script>
-        $(document).ready(function () {
-            var readMoreBtn = document.querySelector(".price__card-link"),
-                readMoreContent = document.querySelector(".price__card-link");
-
-            readMoreBtn.addEventListener("click", function (event) {
-                event.preventDefault();
-                readMoreContent.classList.toggle(".price__card-link");
-                this.textContent = this.textContent === 'Закрыть' ? 'Подробнее' : 'Закрыть';
-            });
+        $('.price__card-link').click(function () {
+            if (!$(this).data('status')) {
+                $(this).html('Закрыть');
+                $(this).data('status', true);
+            } else {
+                $(this).html('Подробнее');
+                $(this).data('status', false);
+            }
         });
     </script><!-- collapse -->
     <script>

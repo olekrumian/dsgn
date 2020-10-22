@@ -149,11 +149,11 @@
         order: 2;
         flex-basis: 100%; }
         .price .price__cards-wrapper .price__card-modal-link {
-          text-decoration: underline;
           font-weight: normal;
           font-size: 16px;
           line-height: 26px;
-          color: var(--heading-color); }
+          color: var(--heading-color);
+          border-bottom: 1px solid var(--heading-color); }
     .price .price__cost-day {
       display: none; }
     .price .price__cost-value {
@@ -224,11 +224,11 @@
         order: 2;
         flex-basis: 100%; }
         .price .price__cards-wrapper .price__card-modal-link {
-          text-decoration: underline;
           font-weight: normal;
           font-size: 16px;
           line-height: 26px;
-          color: var(--heading-color); }
+          color: var(--heading-color);
+          border-bottom: 1px solid var(--heading-color); }
     .price .price__cost-day {
       display: none; }
     .price .price__cost-value {
