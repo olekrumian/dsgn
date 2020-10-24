@@ -150,9 +150,66 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 992px) {
+@media only screen and (orientation: landscape) and (max-width: 992px) {
     .mywork {
         margin: 100px 10% 0px 10%;
+
+        &__wrapper {
+            padding: 0px 0px 42px 0px;
+
+            flex-direction: column;
+
+            .mywork__title {
+                margin: 0px 0px 16px 0px;
+
+            }
+
+            .mywork_text {
+                max-width: 508px;
+            }
+        }
+
+
+        &__card {
+            margin: 35px 0px 0px 0px;
+            padding: 0px 0px 42px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &__card-name {
+            margin: 0px 0px 16px 0px;
+        }
+
+        &__card-description {
+            margin: 0px 0px 38px 0px;
+            max-width: 508px;
+        }
+
+        &__card-icon {
+            display: none;
+        }
+
+        &__card-links {
+            display: block;
+
+            .links {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--heading-color);
+                border-bottom: 1px solid var(--heading-color);
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .mywork {
+        margin: 100px 6% 0px 6%;
 
         &__wrapper {
             padding: 0px 0px 42px 0px;

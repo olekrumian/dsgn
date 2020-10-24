@@ -28,13 +28,29 @@
       stroke: var(--heading-color); }
     #uparrow svg path {
       stroke: var(--heading-color); } }
-@media screen and (orientation: landscape) and (max-width: 992px) {
+@media only screen and (orientation: landscape) and (max-width: 992px) {
   #uparrow {
     height: 80px;
     width: 40px;
     bottom: 10px;
     position: relative;
-    left: 45%;
+    left: 47%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    display: none; }
+    #uparrow svg rect {
+      stroke: var(--heading-color); }
+    #uparrow svg path {
+      stroke: var(--heading-color); } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #uparrow {
+    height: 80px;
+    width: 40px;
+    bottom: 10px;
+    position: relative;
+    left: 47%;
     transform: translate(-50%, 0);
     cursor: pointer;
     position: fixed;
