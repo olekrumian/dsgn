@@ -185,3 +185,43 @@
         }
     }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .concretely {
+        margin: 100px 19% 0px 19%;
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__header {
+            max-width: 270px;
+        }
+
+        &__text {
+            max-width: 553px;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__cards {
+            margin: 0px 0px 0px 0px;
+            flex-direction: column;
+
+            .concretely__card {
+                margin: 40px 0px 0px 0px;
+
+                border-bottom: 1px solid var(--heading-color);
+            }
+
+            .concretely__line {
+                display: none;
+            }
+        }
+    }
+}

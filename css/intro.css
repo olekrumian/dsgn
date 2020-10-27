@@ -83,3 +83,12 @@
       flex-basis: 100%; }
     .intro__ellipse {
       display: none; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .intro {
+    margin: 0 19%; }
+    .intro__wrapper {
+      margin: 100px 0px 0px 0px;
+      max-width: 543px;
+      flex-basis: 100%; }
+    .intro__ellipse {
+      display: none; } }

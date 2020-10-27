@@ -105,3 +105,23 @@
         margin: 0px 0px 16px 0px; }
       .plan__cards-wrapper .plan__card-text {
         max-width: 556px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .plan {
+    margin: 100px 19% 0px 19%; }
+    .plan__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px; }
+    .plan__title {
+      margin: 0px 0px 16px 0px; }
+    .plan__text {
+      max-width: 546px; }
+    .plan__cards-wrapper .plan__card {
+      margin: 46px 0px 0px 0px;
+      padding: 0px 0px 42px 0px;
+      flex-direction: column; }
+      .plan__cards-wrapper .plan__card-num {
+        margin: 0px 0px 40px -15px; }
+      .plan__cards-wrapper .plan__card-title {
+        margin: 0px 0px 16px 0px; }
+      .plan__cards-wrapper .plan__card-text {
+        max-width: 556px; } }
