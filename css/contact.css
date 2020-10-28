@@ -196,5 +196,41 @@
         line-height: 26px;
         color: var(--heading-color);
         border-bottom: 1px solid var(--heading-color); } }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  .contact {
+    margin: 100px 19% 0px 19%;
+    padding: 0px 0px 140px 0px; }
+    .contact__wrapper {
+      display: flex;
+      flex-direction: column; }
+    .contact__title {
+      margin: 0px 0px 16px 0px; }
+      .contact__title h2 {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 51px; }
+    .contact__text {
+      max-width: 530px;
+      padding: 0px 0px 42px 0px; }
+    .contact__card {
+      padding: 35px 0px 0px 0px;
+      display: flex;
+      flex-direction: column; }
+      .contact__card-send {
+        display: block; }
+    .contact__card-social {
+      margin: 0px 0px 16px 0px; }
+    .contact__card-links {
+      margin: 0px 0px 38px 0px; }
+    .contact__card-icon {
+      display: none; }
+    .contact__card-send {
+      padding: 0px 0px 42px 0px; }
+      .contact__card-send a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--heading-color);
+        border-bottom: 1px solid var(--heading-color); } }
 
 /*# sourceMappingURL=contact.css.map */

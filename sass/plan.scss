@@ -247,3 +247,47 @@
         }
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .plan {
+        margin: 100px 19% 0px 19%;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__text {
+            max-width: 546px;
+        }
+
+        &__cards-wrapper {
+            .plan__card {
+                margin: 46px 0px 0px 0px;
+                padding: 0px 0px 42px 0px;
+
+                flex-direction: column;
+
+                &-num {
+                    margin: 0px 0px 40px -15px;
+
+                }
+
+                &-title {
+                    margin: 0px 0px 16px 0px;
+
+                }
+
+                &-text {
+                    max-width: 556px;
+                }
+            }
+        }
+    }
+}

@@ -115,3 +115,7 @@ input[type="checkbox"].switch:checked + label::before {
   input[type="checkbox"].switch + label {
     position: relative;
     padding: 0px 0 0 15px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  input[type="checkbox"].switch + label {
+    position: relative;
+    padding: 0px 0 0 15px; } }

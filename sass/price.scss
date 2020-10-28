@@ -609,3 +609,127 @@
         }
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .price {
+        margin: 100px 19% 0px 19%;
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0px 0px 42px 0px;
+
+        }
+
+        &__title {
+            margin: 0px 0px 16px 0px;
+
+        }
+
+        &__text {
+            max-width: 534px;
+        }
+
+        .price__cards-wrapper {
+            .price__card {
+                margin: 35px 0px 0px 0px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                &-variety {
+                    flex-basis: 100%;
+
+                    p {
+                        margin: 0px 0px 42px 0px;
+                    }
+                }
+
+                &-days {
+                    position: relative;
+                    display: flex;
+                    order: 0;
+                    flex-basis: 50%;
+                    font-weight: 500;
+                    font-size: 78px;
+                    line-height: 107px;
+                    order: 1;
+
+                    &::before {
+                        content: 'Дни';
+                        position: absolute;
+                        top: -20px;
+                        left: 3px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+
+                &-cost {
+                    position: relative;
+                    padding: 0px 0px 0px 0px;
+                    display: flex;
+                    order: 1;
+                    flex-basis: 50%;
+                    margin: 0px 0px 45px 0px;
+                    font-weight: 500;
+                    font-size: 78px;
+                    line-height: 107px;
+                    order: 2;
+
+                    &::before {
+                        content: 'Цена ($$$)';
+                        position: absolute;
+                        top: -20px;
+                        left: -2px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+
+                &-link {
+                    display: none;
+                    margin: 0;
+                }
+
+                .collapse {
+                    margin: 0;
+                }
+
+                &-modal {
+                    margin: 0px 0px 42px 0px;
+
+                    display: flex;
+                    order: 2;
+                    flex-basis: 100%;
+
+                    &-link {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: var(--heading-color);
+                        border-bottom: 1px solid var(--heading-color);
+                    }
+                }
+
+            }
+        }
+
+        .price__cost-day {
+            display: none;
+        }
+
+        .price__cost-value {
+            display: none;
+        }
+
+        &__card-variety {
+
+            p {
+                width: 420px;
+            }
+
+        }
+    }
+}
