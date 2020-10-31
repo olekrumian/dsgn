@@ -51,6 +51,59 @@
     width: 480px;
     height: 300px; }
 
+@media (min-width: 1920px) {
+  .mywork {
+    margin: 250px 0px 0px 0px; }
+    .mywork__wrapper {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--heading-color); }
+    .mywork__title {
+      margin: 0px 0px 146px 0px; }
+      .mywork__title h2 {
+        font-weight: bold;
+        font-size: 58px;
+        line-height: 79px;
+        color: var(--heading-color); }
+    .mywork_text {
+      max-width: 554px; }
+      .mywork_text p {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--font-color); }
+    .mywork__card {
+      margin: 82px 0px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid var(--heading-color); }
+    .mywork__card-name {
+      margin: 0px 0px 156px 0px; }
+      .mywork__card-name h3 {
+        font-weight: bold;
+        font-size: 58px;
+        line-height: 65px;
+        color: var(--heading-color); }
+    .mywork__card-description {
+      max-width: 553px; }
+      .mywork__card-description p {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--font-color); }
+    .mywork__card-icon svg line {
+      stroke: var(--heading-color); }
+    .mywork__card-links {
+      display: none; }
+    .mywork__card-link {
+      color: var(--heading-color); }
+    .mywork #laweta {
+      position: absolute;
+      width: 480px;
+      height: 300px; } }
 @media (max-width: 576px) {
   .mywork {
     margin: 100px 0px 0px 0px; }

@@ -74,6 +74,81 @@
 
 }
 
+@media (min-width: 1920px) {
+    .intro {
+        display: flex;
+        justify-content: space-between;
+
+        &__wrapper {
+            flex-basis: 50%;
+            max-width: 640px;
+            margin: 286px 0px 0px 0px;
+            overflow: hidden;
+        }
+
+        &__header {
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 79px;
+            color: var(--heading-color);
+        }
+
+        &__text {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 35px;
+            color: var(--font-color);
+        }
+
+        &__ellipse {
+            display: block;
+            flex-basis: 50%;
+
+            &-one {
+                position: relative;
+                width: 860px;
+                height: 860px;
+                background: #AF00ED;
+                filter: blur(130px);
+                border-radius: 100%;
+                z-index: 4;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 60%;
+                    left: 60%;
+                    transform: translate(-40%, -70%);
+                    width: 315px;
+                    height: 315px;
+                    background: #00E9BF;
+                    filter: blur(70px);
+                    border-radius: 100%;
+                    z-index: 3;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 601px;
+                    height: 601px;
+                    background: #0095E9;
+                    filter: blur(110px);
+                    border-radius: 100%;
+                    z-index: 1;
+                }
+            }
+
+        }
+    }
+
+}
+
 @media (max-width: 576px) {
     .intro {
         &__wrapper {

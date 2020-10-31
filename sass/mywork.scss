@@ -92,6 +92,102 @@
 
 }
 
+@media (min-width: 1920px) {
+    .mywork {
+        margin: 250px 0px 0px 0px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--heading-color);
+        }
+
+        &__title {
+            margin: 0px 0px 146px 0px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 58px;
+                line-height: 79px;
+                color: var(--heading-color);
+            }
+        }
+
+        &_text {
+            max-width: 554px;
+
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+        }
+
+        &__card {
+            margin: 82px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border-bottom: 1px solid var(--heading-color);
+        }
+
+        &__card-name {
+            margin: 0px 0px 156px 0px;
+
+            h3 {
+                font-weight: bold;
+                font-size: 58px;
+                line-height: 65px;
+                color: var(--heading-color);
+            }
+        }
+
+        &__card-description {
+            max-width: 553px;
+
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+        }
+
+        &__card-icon {
+            svg {
+
+                line {
+                    stroke: var(--heading-color);
+                }
+
+            }
+        }
+
+        &__card-links {
+            display: none;
+        }
+
+
+        .mywork__card {}
+
+        &__card-link {
+            color: var(--heading-color);
+
+        }
+
+
+        #laweta {
+            position: absolute;
+            width: 480px;
+            height: 300px;
+        }
+
+    }
+}
+
 @media (max-width: 576px) {
     .mywork {
         margin: 100px 0px 0px 0px;

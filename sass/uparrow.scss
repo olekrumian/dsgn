@@ -20,6 +20,31 @@
     }
 }
 
+@media (min-width: 1920px) {
+    #uparrow {
+        bottom: 100px;
+        left: 47%;
+        cursor: pointer;
+        position: fixed;
+        z-index: 1;
+        display: none;
+
+        svg {
+            height: 50px;
+            width: 100px;
+
+            rect {
+                stroke: var(--heading-color);
+            }
+
+            path {
+                stroke: var(--heading-color);
+            }
+
+        }
+    }
+}
+
 @media (max-width: 576px) {
     #uparrow {
         height: 80px;

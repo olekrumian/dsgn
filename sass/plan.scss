@@ -76,6 +76,84 @@
 
 }
 
+@media (min-width: 1920px) {
+    .plan {
+        margin: 208px 0px 0px 0px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--heading-color);
+        }
+
+        &__title {
+            margin: 0px 0px 146px 0px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 58px;
+                line-height: 79px;
+                color: var(--heading-color);
+            }
+        }
+
+        &__text {
+            max-width: 553px;
+
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+        }
+
+
+        &__card {
+            margin: 93px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid var(--heading-color);
+        }
+
+        &__card-num {
+            margin: 0px 0px 93px -15px;
+            max-width: 205px;
+
+            p {
+                font-weight: 500;
+                font-size: 268px;
+                line-height: 200px;
+                color: var(--heading-color);
+            }
+        }
+
+        &__card-title {
+            min-width: 195px;
+
+            h4 {
+                font-weight: 800;
+                font-size: 25px;
+                line-height: 31px;
+                color: var(--heading-color);
+            }
+        }
+
+        &__card-text {
+            max-width: 553px;
+
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+        }
+
+    }
+}
+
 @media (max-width: 576px) {
     .plan {
         margin: 100px 0px 0px 0px;

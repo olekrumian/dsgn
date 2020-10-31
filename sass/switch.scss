@@ -151,3 +151,10 @@ input[type="checkbox"].switch:checked+label::before {
         padding: 0px 0 0 15px;
     }
 }
+
+@media (min-width: 1920px) {
+    .header__toggle {
+        margin: 4px 0px 0px -70px;
+        z-index: 1001;
+    }
+}

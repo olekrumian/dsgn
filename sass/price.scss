@@ -41,7 +41,7 @@
             line-height: 26px;
             color: var(--heading-color);
             top: -37px;
-            left: 470px;
+            left: 450px;
         }
 
         .price__cost-value {
@@ -116,6 +116,10 @@
         font-size: 198px;
         line-height: 152px;
         color: var(--heading-color);
+
+        &-first {
+            margin: 0px 0px 0px -50px;
+        }
     }
 
     &__card-cost {
@@ -127,6 +131,141 @@
         color: var(--heading-color);
     }
 
+}
+
+@media (min-width: 1920px) {
+    .price {
+        margin: 250px 0px 0px 0px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--heading-color);
+        }
+
+        &__title {
+            margin: 0px 0px 226px 0px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 58px;
+                line-height: 79px;
+                color: var(--heading-color);
+            }
+        }
+
+        &__text {
+            max-width: 553px;
+
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+        }
+
+        &__cost-wrapper {
+            position: relative;
+
+            p {}
+
+            .price__cost-day {
+                position: absolute;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--heading-color);
+                top: -37px;
+                left: 670px;
+            }
+
+            .price__cost-value {
+                position: absolute;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--heading-color);
+                top: -37px;
+                right: 400px;
+            }
+        }
+
+        &__card {
+            margin: 90px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--heading-color);
+
+            &-about {
+                width: 427px;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--font-color);
+            }
+
+            &-link {
+                cursor: pointer;
+                position: relative;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 35px;
+                color: var(--heading-color);
+                border-bottom: 1px solid var(--heading-color);
+            }
+
+            &-modal {
+                display: none;
+            }
+        }
+
+        &__card-variety {
+
+            .collapse:not(.show) {
+                display: none;
+            }
+
+            .collapsing {
+                position: relative;
+                height: 0;
+                overflow: hidden;
+                transition: height .35s ease
+            }
+
+            p {
+                width: 434px;
+                margin: 0px 0px 15px 0px;
+                font-weight: bold;
+                font-size: 58px;
+                line-height: 79px;
+                color: var(--heading-color);
+            }
+
+        }
+
+
+        &__card-days {
+            font-weight: 500;
+            font-size: 268px;
+            line-height: 200px;
+            color: var(--heading-color);
+
+            &-first {
+                margin: 0px 0px 0px -60px;
+            }
+        }
+
+        &__card-cost {
+            margin: 0px 0px 115px 0px;
+            padding: 0px 40px 0px 0px;
+            font-weight: 500;
+            font-size: 268px;
+            line-height: 200px;
+            color: var(--heading-color);
+        }
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -240,6 +379,12 @@
 
         .price__cost-value {
             display: none;
+        }
+
+        &__card-days {
+            &-first {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
@@ -357,6 +502,12 @@
 
         .price__cost-value {
             display: none;
+        }
+
+        &__card-days {
+            &-first {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
@@ -483,6 +634,12 @@
             }
 
         }
+
+        &__card-days {
+            &-first {
+                margin: 0px 0px 0px 0px;
+            }
+        }
     }
 }
 
@@ -607,6 +764,12 @@
             }
 
         }
+
+        &__card-days {
+            &-first {
+                margin: 0px 0px 0px 0px;
+            }
+        }
     }
 }
 
@@ -730,6 +893,12 @@
                 width: 420px;
             }
 
+        }
+
+        &__card-days {
+            &-first {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
