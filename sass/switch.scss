@@ -12,7 +12,7 @@ input[type="checkbox"].switch {
 input[type="checkbox"].switch+label {
     position: relative;
     padding: 5px 0 0 50px;
-    line-height: 2.0em;
+    line-height: 2.1em;
     width: 45px;
     height: 30px;
     z-index: 41;
@@ -73,7 +73,7 @@ input[type="checkbox"].switch:checked+label::before {
     input[type="checkbox"].switch+label {
         position: relative;
         padding: 5px 0 0 50px;
-        line-height: 2.0em;
+        line-height: 2.1em;
         width: 60px;
         height: 40px;
         z-index: 41;
