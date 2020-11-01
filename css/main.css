@@ -1234,7 +1234,7 @@ input[type="checkbox"].switch:checked + label::before {
         line-height: 35px;
         color: var(--heading-color);
         top: -37px;
-        left: 560px; }
+        left: 535px; }
       .price__cost-wrapper .price__cost-value {
         position: absolute;
         font-weight: normal;
