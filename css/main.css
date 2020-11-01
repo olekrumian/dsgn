@@ -1131,7 +1131,7 @@ input[type="checkbox"].switch:checked + label::before {
       line-height: 26px;
       color: var(--heading-color);
       top: -37px;
-      left: 450px; }
+      left: 423px; }
     .price__cost-wrapper .price__cost-value {
       position: absolute;
       font-weight: normal;
@@ -1181,12 +1181,17 @@ input[type="checkbox"].switch:checked + label::before {
     line-height: 51px;
     color: var(--heading-color); }
   .price__card-days {
+    text-align: left;
     font-weight: 500;
     font-size: 198px;
     line-height: 152px;
     color: var(--heading-color); }
     .price__card-days-first {
-      margin: 0px 0px 0px -50px; }
+      margin: 0px 0px 0px -95px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px -45px; }
+    .price__card-days-at {
+      margin: 0px 0px 0px -65px; }
   .price__card-cost {
     margin: 0px 0px 105px 0px;
     padding: 0px 40px 0px 0px;
@@ -1229,7 +1234,7 @@ input[type="checkbox"].switch:checked + label::before {
         line-height: 35px;
         color: var(--heading-color);
         top: -37px;
-        left: 670px; }
+        left: 560px; }
       .price__cost-wrapper .price__cost-value {
         position: absolute;
         font-weight: normal;
@@ -1237,7 +1242,7 @@ input[type="checkbox"].switch:checked + label::before {
         line-height: 35px;
         color: var(--heading-color);
         top: -37px;
-        right: 400px; }
+        right: 440px; }
     .price__card {
       margin: 90px 0px 0px 0px;
       display: -webkit-box;
@@ -1284,10 +1289,14 @@ input[type="checkbox"].switch:checked + label::before {
       line-height: 200px;
       color: var(--heading-color); }
       .price__card-days-first {
-        margin: 0px 0px 0px -60px; }
+        margin: 0px 0px 0px -270px; }
+      .price__card-days-an {
+        margin: 0px 0px 0px -205px; }
+      .price__card-days-at {
+        margin: 0px 0px 0px -230px; }
     .price__card-cost {
       margin: 0px 0px 115px 0px;
-      padding: 0px 40px 0px 0px;
+      padding: 0px 85px 0px 0px;
       font-weight: 500;
       font-size: 268px;
       line-height: 200px;
@@ -1394,6 +1403,10 @@ input[type="checkbox"].switch:checked + label::before {
     .price .price__cost-value {
       display: none; }
     .price__card-days-first {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-at {
       margin: 0px 0px 0px 0px; } }
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .price {
@@ -1500,6 +1513,10 @@ input[type="checkbox"].switch:checked + label::before {
     .price .price__cost-value {
       display: none; }
     .price__card-days-first {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-at {
       margin: 0px 0px 0px 0px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .price {
@@ -1608,6 +1625,10 @@ input[type="checkbox"].switch:checked + label::before {
     .price__card-variety p {
       width: 420px; }
     .price__card-days-first {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-at {
       margin: 0px 0px 0px 0px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .price {
@@ -1716,6 +1737,10 @@ input[type="checkbox"].switch:checked + label::before {
     .price__card-variety p {
       width: 420px; }
     .price__card-days-first {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-at {
       margin: 0px 0px 0px 0px; } }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .price {
@@ -1824,6 +1849,10 @@ input[type="checkbox"].switch:checked + label::before {
     .price__card-variety p {
       width: 420px; }
     .price__card-days-first {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-an {
+      margin: 0px 0px 0px 0px; }
+    .price__card-days-at {
       margin: 0px 0px 0px 0px; } }
 .mywork {
   margin: 200px 0px 0px 0px; }
@@ -1875,7 +1904,8 @@ input[type="checkbox"].switch:checked + label::before {
       line-height: 51px;
       color: var(--heading-color); }
   .mywork__card-description {
-    max-width: 394px; }
+    max-width: 394px;
+    margin: 0px 0px 0px 190px; }
     .mywork__card-description p {
       font-weight: normal;
       font-size: 16px;
@@ -1943,7 +1973,8 @@ input[type="checkbox"].switch:checked + label::before {
         line-height: 65px;
         color: var(--heading-color); }
     .mywork__card-description {
-      max-width: 553px; }
+      max-width: 553px;
+      margin: 0px 0px 0px 270px; }
       .mywork__card-description p {
         font-weight: normal;
         font-size: 22px;

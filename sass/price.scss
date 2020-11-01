@@ -41,7 +41,7 @@
             line-height: 26px;
             color: var(--heading-color);
             top: -37px;
-            left: 450px;
+            left: 423px;
         }
 
         .price__cost-value {
@@ -54,8 +54,6 @@
             right: 310px;
         }
     }
-
-    &__cards-wrapper {}
 
     &__card {
         margin: 90px 0px 0px 0px;
@@ -112,13 +110,22 @@
 
 
     &__card-days {
+        text-align: left;
         font-weight: 500;
         font-size: 198px;
         line-height: 152px;
         color: var(--heading-color);
 
         &-first {
-            margin: 0px 0px 0px -50px;
+            margin: 0px 0px 0px -95px;
+        }
+
+        &-an {
+            margin: 0px 0px 0px -45px;
+        }
+
+        &-at {
+            margin: 0px 0px 0px -65px;
         }
     }
 
@@ -177,7 +184,7 @@
                 line-height: 35px;
                 color: var(--heading-color);
                 top: -37px;
-                left: 670px;
+                left: 560px;
             }
 
             .price__cost-value {
@@ -187,7 +194,7 @@
                 line-height: 35px;
                 color: var(--heading-color);
                 top: -37px;
-                right: 400px;
+                right: 440px;
             }
         }
 
@@ -252,13 +259,21 @@
             color: var(--heading-color);
 
             &-first {
-                margin: 0px 0px 0px -60px;
+                margin: 0px 0px 0px -270px;
+            }
+
+            &-an {
+                margin: 0px 0px 0px -205px;
+            }
+
+            &-at {
+                margin: 0px 0px 0px -230px;
             }
         }
 
         &__card-cost {
             margin: 0px 0px 115px 0px;
-            padding: 0px 40px 0px 0px;
+            padding: 0px 85px 0px 0px;
             font-weight: 500;
             font-size: 268px;
             line-height: 200px;
@@ -385,6 +400,14 @@
             &-first {
                 margin: 0px 0px 0px 0px;
             }
+
+            &-an {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-at {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
@@ -506,6 +529,14 @@
 
         &__card-days {
             &-first {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-an {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-at {
                 margin: 0px 0px 0px 0px;
             }
         }
@@ -639,6 +670,14 @@
             &-first {
                 margin: 0px 0px 0px 0px;
             }
+
+            &-an {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-at {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
@@ -769,6 +808,14 @@
             &-first {
                 margin: 0px 0px 0px 0px;
             }
+
+            &-an {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-at {
+                margin: 0px 0px 0px 0px;
+            }
         }
     }
 }
@@ -897,6 +944,14 @@
 
         &__card-days {
             &-first {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-an {
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-at {
                 margin: 0px 0px 0px 0px;
             }
         }

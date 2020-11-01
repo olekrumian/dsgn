@@ -34,7 +34,8 @@
       line-height: 51px;
       color: var(--heading-color); }
   .mywork__card-description {
-    max-width: 394px; }
+    max-width: 394px;
+    margin: 0px 0px 0px 190px; }
     .mywork__card-description p {
       font-weight: normal;
       font-size: 16px;
@@ -88,7 +89,8 @@
         line-height: 65px;
         color: var(--heading-color); }
     .mywork__card-description {
-      max-width: 553px; }
+      max-width: 553px;
+      margin: 0px 0px 0px 270px; }
       .mywork__card-description p {
         font-weight: normal;
         font-size: 22px;
