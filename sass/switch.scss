@@ -1,6 +1,6 @@
 .header__toggle {
     margin: 0px 0px 0px -47px;
-    z-index: 1001;
+    z-index: 1;
 
 }
 
@@ -11,7 +11,7 @@ input[type="checkbox"].switch {
 
 input[type="checkbox"].switch+label {
     position: relative;
-    padding: 5px 0 0 50px;
+    padding: 0px 0 0 50px;
     line-height: 2.1em;
     width: 45px;
     height: 30px;
@@ -155,6 +155,6 @@ input[type="checkbox"].switch:checked+label::before {
 @media (min-width: 1920px) {
     .header__toggle {
         margin: 4px 0px 0px -70px;
-        z-index: 1001;
+        z-index: 1;
     }
 }

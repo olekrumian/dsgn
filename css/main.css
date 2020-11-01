@@ -85,7 +85,7 @@ p {
 
 .header__toggle {
   margin: 0px 0px 0px -47px;
-  z-index: 1001; }
+  z-index: 1; }
 
 input[type="checkbox"].switch {
   position: absolute;
@@ -93,7 +93,7 @@ input[type="checkbox"].switch {
 
 input[type="checkbox"].switch + label {
   position: relative;
-  padding: 5px 0 0 50px;
+  padding: 0px 0 0 50px;
   line-height: 2.1em;
   width: 45px;
   height: 30px;
@@ -207,7 +207,7 @@ input[type="checkbox"].switch:checked + label::before {
 @media (min-width: 1920px) {
   .header__toggle {
     margin: 4px 0px 0px -70px;
-    z-index: 1001; } }
+    z-index: 1; } }
 .container {
   max-width: 1240px;
   margin: 0 auto; }
@@ -1175,7 +1175,7 @@ input[type="checkbox"].switch:checked + label::before {
     transition: height 0.35s ease; }
   .price__card-variety p {
     width: 275px;
-    margin: 0px 0px 36px 0px;
+    margin: 0px 0px 15px 0px;
     font-weight: bold;
     font-size: 44px;
     line-height: 51px;
