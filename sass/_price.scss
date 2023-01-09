@@ -1,959 +1,923 @@
 .price {
-    margin: 200px 0px 0px 0px;
+  margin: 200px 0px 0px 0px;
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid var(--heading-color);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--heading-color);
+  }
+
+  &__title {
+    margin: 0px 0px 164px 0px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color);
+    }
+  }
+
+  &__text {
+    max-width: 393px;
+
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--font-color);
+    }
+  }
+
+  &__cost-wrapper {
+    position: relative;
+
+    .price__cost-day {
+      position: absolute;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color);
+      top: -37px;
+      left: 423px;
     }
 
-    &__title {
-        margin: 0px 0px 164px 0px;
+    .price__cost-value {
+      position: absolute;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color);
+      top: -37px;
+      right: 310px;
+    }
+  }
 
-        h2 {
-            font-weight: bold;
-            font-size: 44px;
-            line-height: 51px;
-            color: var(--heading-color);
-        }
+  &__card {
+    margin: 90px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--heading-color);
+
+    &-about {
+      width: 275px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--font-color);
     }
 
-    &__text {
-        max-width: 393px;
-
-        p {
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--font-color);
-        }
+    &-link {
+      cursor: pointer;
+      position: relative;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--heading-color);
+      border-bottom: 1px solid var(--heading-color);
     }
 
-    &__cost-wrapper {
-        position: relative;
+    &-modal {
+      display: none;
+    }
+  }
 
-        p {}
-
-        .price__cost-day {
-            position: absolute;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--heading-color);
-            top: -37px;
-            left: 423px;
-        }
-
-        .price__cost-value {
-            position: absolute;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--heading-color);
-            top: -37px;
-            right: 310px;
-        }
+  &__card-variety {
+    .collapse:not(.show) {
+      display: none;
     }
 
-    &__card {
-        margin: 90px 0px 0px 0px;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid var(--heading-color);
-
-        &-about {
-            width: 275px;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--font-color);
-        }
-
-        &-link {
-            cursor: pointer;
-            position: relative;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: var(--heading-color);
-            border-bottom: 1px solid var(--heading-color);
-        }
-
-        &-modal {
-            display: none;
-        }
+    .collapsing {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.35s ease;
     }
 
-    &__card-variety {
+    p {
+      width: 275px;
+      margin: 0px 0px 15px 0px;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 51px;
+      color: var(--heading-color);
+    }
+  }
 
-        .collapse:not(.show) {
-            display: none;
-        }
+  &__card-days {
+    text-align: left;
+    font-weight: 500;
+    font-size: 198px;
+    line-height: 152px;
+    color: var(--heading-color);
 
-        .collapsing {
-            position: relative;
-            height: 0;
-            overflow: hidden;
-            transition: height .35s ease
-        }
-
-        p {
-            width: 275px;
-            margin: 0px 0px 15px 0px;
-            font-weight: bold;
-            font-size: 44px;
-            line-height: 51px;
-            color: var(--heading-color);
-        }
-
+    &-first {
+      margin: 0px 0px 0px -95px;
     }
 
-
-    &__card-days {
-        text-align: left;
-        font-weight: 500;
-        font-size: 198px;
-        line-height: 152px;
-        color: var(--heading-color);
-
-        &-first {
-            margin: 0px 0px 0px -95px;
-        }
-
-        &-an {
-            margin: 0px 0px 0px -45px;
-        }
-
-        &-at {
-            margin: 0px 0px 0px -65px;
-        }
+    &-an {
+      margin: 0px 0px 0px -45px;
     }
 
-    &__card-cost {
-        margin: 0px 0px 105px 0px;
-        padding: 0px 40px 0px 0px;
-        font-weight: 500;
-        font-size: 198px;
-        line-height: 146px;
-        color: var(--heading-color);
+    &-at {
+      margin: 0px 0px 0px -65px;
     }
+  }
 
+  &__card-cost {
+    margin: 0px 0px 105px 0px;
+    padding: 0px 40px 0px 0px;
+    font-weight: 500;
+    font-size: 198px;
+    line-height: 146px;
+    color: var(--heading-color);
+  }
 }
 
 @media (min-width: 1920px) {
-    .price {
-        margin: 250px 0px 0px 0px;
+  .price {
+    margin: 250px 0px 0px 0px;
 
-        &__wrapper {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--heading-color);
-        }
-
-        &__title {
-            margin: 0px 0px 226px 0px;
-
-            h2 {
-                font-weight: bold;
-                font-size: 58px;
-                line-height: 79px;
-                color: var(--heading-color);
-            }
-        }
-
-        &__text {
-            max-width: 553px;
-
-            p {
-                font-weight: normal;
-                font-size: 22px;
-                line-height: 35px;
-                color: var(--font-color);
-            }
-        }
-
-        &__cost-wrapper {
-            position: relative;
-
-            p {}
-
-            .price__cost-day {
-                position: absolute;
-                font-weight: normal;
-                font-size: 22px;
-                line-height: 35px;
-                color: var(--heading-color);
-                top: -37px;
-                left: 535px;
-            }
-
-            .price__cost-value {
-                position: absolute;
-                font-weight: normal;
-                font-size: 22px;
-                line-height: 35px;
-                color: var(--heading-color);
-                top: -37px;
-                right: 440px;
-            }
-        }
-
-        &__card {
-            margin: 90px 0px 0px 0px;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid var(--heading-color);
-
-            &-about {
-                width: 427px;
-                font-weight: normal;
-                font-size: 22px;
-                line-height: 35px;
-                color: var(--font-color);
-            }
-
-            &-link {
-                cursor: pointer;
-                position: relative;
-                font-weight: normal;
-                font-size: 22px;
-                line-height: 35px;
-                color: var(--heading-color);
-                border-bottom: 1px solid var(--heading-color);
-            }
-
-            &-modal {
-                display: none;
-            }
-        }
-
-        &__card-variety {
-
-            .collapse:not(.show) {
-                display: none;
-            }
-
-            .collapsing {
-                position: relative;
-                height: 0;
-                overflow: hidden;
-                transition: height .35s ease
-            }
-
-            p {
-                width: 434px;
-                margin: 0px 0px 15px 0px;
-                font-weight: bold;
-                font-size: 58px;
-                line-height: 79px;
-                color: var(--heading-color);
-            }
-
-        }
-
-
-        &__card-days {
-            font-weight: 500;
-            font-size: 268px;
-            line-height: 200px;
-            color: var(--heading-color);
-
-            &-first {
-                margin: 0px 0px 0px -270px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px -205px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px -230px;
-            }
-        }
-
-        &__card-cost {
-            margin: 0px 0px 115px 0px;
-            padding: 0px 85px 0px 0px;
-            font-weight: 500;
-            font-size: 268px;
-            line-height: 200px;
-            color: var(--heading-color);
-        }
-
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--heading-color);
     }
+
+    &__title {
+      margin: 0px 0px 226px 0px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 58px;
+        line-height: 79px;
+        color: var(--heading-color);
+      }
+    }
+
+    &__text {
+      max-width: 553px;
+
+      p {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--font-color);
+      }
+    }
+
+    &__cost-wrapper {
+      position: relative;
+
+      .price__cost-day {
+        position: absolute;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--heading-color);
+        top: -37px;
+        left: 535px;
+      }
+
+      .price__cost-value {
+        position: absolute;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--heading-color);
+        top: -37px;
+        right: 440px;
+      }
+    }
+
+    &__card {
+      margin: 90px 0px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--heading-color);
+
+      &-about {
+        width: 427px;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--font-color);
+      }
+
+      &-link {
+        cursor: pointer;
+        position: relative;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: var(--heading-color);
+        border-bottom: 1px solid var(--heading-color);
+      }
+
+      &-modal {
+        display: none;
+      }
+    }
+
+    &__card-variety {
+      .collapse:not(.show) {
+        display: none;
+      }
+
+      .collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.35s ease;
+      }
+
+      p {
+        width: 434px;
+        margin: 0px 0px 15px 0px;
+        font-weight: bold;
+        font-size: 58px;
+        line-height: 79px;
+        color: var(--heading-color);
+      }
+    }
+
+    &__card-days {
+      font-weight: 500;
+      font-size: 268px;
+      line-height: 200px;
+      color: var(--heading-color);
+
+      &-first {
+        margin: 0px 0px 0px -270px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px -205px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px -230px;
+      }
+    }
+
+    &__card-cost {
+      margin: 0px 0px 115px 0px;
+      padding: 0px 85px 0px 0px;
+      font-weight: 500;
+      font-size: 268px;
+      line-height: 200px;
+      color: var(--heading-color);
+    }
+  }
 }
 
 @media (max-width: 576px) {
-    .price {
-        margin: 100px 0px 0px 0px;
+  .price {
+    margin: 100px 0px 0px 0px;
 
-        &__wrapper {
-            flex-direction: column;
-            padding: 0px 0px 42px 0px;
-
-        }
-
-        &__title {
-            margin: 0px 0px 16px 0px;
-
-        }
-
-        &__text {
-            max-width: 330px;
-        }
-
-        .price__cards-wrapper {
-            .price__card {
-                margin: 35px 0px 0px 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                &-variety {
-                    p {
-                        margin: 0px 0px 42px 0px;
-
-                    }
-                }
-
-                &-days {
-                    position: relative;
-                    display: flex;
-                    order: 0;
-                    flex-basis: 50%;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 1;
-
-                    &::before {
-                        content: 'Дни';
-                        position: absolute;
-                        top: -20px;
-                        left: 3px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-cost {
-                    position: relative;
-                    padding: 0px 0px 0px 0px;
-                    display: flex;
-                    order: 1;
-                    flex-basis: 50%;
-                    margin: 0px 0px 21px 0px;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 2;
-
-                    &::before {
-                        content: 'Цена ($$$)';
-                        position: absolute;
-                        top: -20px;
-                        left: -2px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-link {
-                    display: none;
-                    margin: 0;
-                }
-
-                .collapse {
-                    margin: 0;
-                }
-
-                &-modal {
-                    margin: 0px 0px 42px 0px;
-
-                    display: flex;
-                    order: 2;
-                    flex-basis: 100%;
-
-                    &-link {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        border-bottom: 1px solid var(--heading-color);
-                    }
-                }
-
-            }
-        }
-
-        .price__cost-day {
-            display: none;
-        }
-
-        .price__cost-value {
-            display: none;
-        }
-
-        &__card-days {
-            &-first {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px 0px;
-            }
-        }
+    &__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px;
     }
+
+    &__title {
+      margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+      max-width: 330px;
+    }
+
+    .price__cards-wrapper {
+      .price__card {
+        margin: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-variety {
+          p {
+            margin: 0px 0px 42px 0px;
+          }
+        }
+
+        &-days {
+          position: relative;
+          display: flex;
+          order: 0;
+          flex-basis: 50%;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 1;
+
+          &::before {
+            content: 'Дні';
+            position: absolute;
+            top: -20px;
+            left: 3px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-cost {
+          position: relative;
+          padding: 0px 0px 0px 0px;
+          display: flex;
+          order: 1;
+          flex-basis: 50%;
+          margin: 0px 0px 21px 0px;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 2;
+
+          &::before {
+            content: 'Ціна ($$$)';
+            position: absolute;
+            top: -20px;
+            left: -2px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-link {
+          display: none;
+          margin: 0;
+        }
+
+        .collapse {
+          margin: 0;
+        }
+
+        &-modal {
+          margin: 0px 0px 42px 0px;
+
+          display: flex;
+          order: 2;
+          flex-basis: 100%;
+
+          &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--heading-color);
+          }
+        }
+      }
+    }
+
+    .price__cost-day {
+      display: none;
+    }
+
+    .price__cost-value {
+      display: none;
+    }
+
+    &__card-days {
+      &-first {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 992px) {
-    .price {
-        margin: 100px 10% 0px 10%;
+  .price {
+    margin: 100px 10% 0px 10%;
 
-        &__wrapper {
-            flex-direction: column;
-            padding: 0px 0px 42px 0px;
-
-        }
-
-        &__title {
-            margin: 0px 0px 16px 0px;
-
-        }
-
-        &__text {
-            max-width: 534px;
-        }
-
-        .price__cards-wrapper {
-            .price__card {
-                margin: 35px 0px 0px 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                &-variety {
-                    flex-basis: 100%;
-
-                    p {
-                        margin: 0px 0px 42px 0px;
-
-                    }
-                }
-
-                &-days {
-                    position: relative;
-                    display: flex;
-                    order: 0;
-                    flex-basis: 50%;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 1;
-
-                    &::before {
-                        content: 'Дни';
-                        position: absolute;
-                        top: -20px;
-                        left: 3px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-cost {
-                    position: relative;
-                    padding: 0px 0px 0px 0px;
-                    display: flex;
-                    order: 1;
-                    flex-basis: 50%;
-                    margin: 0px 0px 21px 0px;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 2;
-
-                    &::before {
-                        content: 'Цена ($$$)';
-                        position: absolute;
-                        top: -20px;
-                        left: -2px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-link {
-                    display: none;
-                    margin: 0;
-                }
-
-                .collapse {
-                    margin: 0;
-                }
-
-                &-modal {
-                    margin: 0px 0px 42px 0px;
-
-                    display: flex;
-                    order: 2;
-                    flex-basis: 100%;
-
-                    &-link {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        border-bottom: 1px solid var(--heading-color);
-                    }
-                }
-
-            }
-        }
-
-        .price__cost-day {
-            display: none;
-        }
-
-        .price__cost-value {
-            display: none;
-        }
-
-        &__card-days {
-            &-first {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px 0px;
-            }
-        }
+    &__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px;
     }
+
+    &__title {
+      margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+      max-width: 534px;
+    }
+
+    .price__cards-wrapper {
+      .price__card {
+        margin: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-variety {
+          flex-basis: 100%;
+
+          p {
+            margin: 0px 0px 42px 0px;
+          }
+        }
+
+        &-days {
+          position: relative;
+          display: flex;
+          order: 0;
+          flex-basis: 50%;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 1;
+
+          &::before {
+            content: 'Дні';
+            position: absolute;
+            top: -20px;
+            left: 3px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-cost {
+          position: relative;
+          padding: 0px 0px 0px 0px;
+          display: flex;
+          order: 1;
+          flex-basis: 50%;
+          margin: 0px 0px 21px 0px;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 2;
+
+          &::before {
+            content: 'Ціна ($$$)';
+            position: absolute;
+            top: -20px;
+            left: -2px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-link {
+          display: none;
+          margin: 0;
+        }
+
+        .collapse {
+          margin: 0;
+        }
+
+        &-modal {
+          margin: 0px 0px 42px 0px;
+
+          display: flex;
+          order: 2;
+          flex-basis: 100%;
+
+          &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--heading-color);
+          }
+        }
+      }
+    }
+
+    .price__cost-day {
+      display: none;
+    }
+
+    .price__cost-value {
+      display: none;
+    }
+
+    &__card-days {
+      &-first {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .price {
-        margin: 100px 6% 0px 6%;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .price {
+    margin: 100px 6% 0px 6%;
 
-        &__wrapper {
-            flex-direction: column;
-            padding: 0px 0px 42px 0px;
-
-        }
-
-        &__title {
-            margin: 0px 0px 16px 0px;
-
-        }
-
-        &__text {
-            max-width: 534px;
-        }
-
-        .price__cards-wrapper {
-            .price__card {
-                margin: 35px 0px 0px 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                &-variety {
-                    flex-basis: 100%;
-
-                    p {
-                        margin: 0px 0px 42px 0px;
-
-                    }
-                }
-
-                &-days {
-                    position: relative;
-                    display: flex;
-                    order: 0;
-                    flex-basis: 50%;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 1;
-
-                    &::before {
-                        content: 'Дни';
-                        position: absolute;
-                        top: -20px;
-                        left: 3px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-cost {
-                    position: relative;
-                    padding: 0px 0px 0px 0px;
-                    display: flex;
-                    order: 1;
-                    flex-basis: 50%;
-                    margin: 0px 0px 45px 0px;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 2;
-
-                    &::before {
-                        content: 'Цена ($$$)';
-                        position: absolute;
-                        top: -20px;
-                        left: -2px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-link {
-                    display: none;
-                    margin: 0;
-                }
-
-                .collapse {
-                    margin: 0;
-                }
-
-                &-modal {
-                    margin: 0px 0px 42px 0px;
-
-                    display: flex;
-                    order: 2;
-                    flex-basis: 100%;
-
-                    &-link {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        border-bottom: 1px solid var(--heading-color);
-                    }
-                }
-
-            }
-        }
-
-        .price__cost-day {
-            display: none;
-        }
-
-        .price__cost-value {
-            display: none;
-        }
-
-        &__card-variety {
-
-            p {
-                width: 420px;
-            }
-
-        }
-
-        &__card-days {
-            &-first {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px 0px;
-            }
-        }
+    &__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px;
     }
+
+    &__title {
+      margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+      max-width: 534px;
+    }
+
+    .price__cards-wrapper {
+      .price__card {
+        margin: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-variety {
+          flex-basis: 100%;
+
+          p {
+            margin: 0px 0px 42px 0px;
+          }
+        }
+
+        &-days {
+          position: relative;
+          display: flex;
+          order: 0;
+          flex-basis: 50%;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 1;
+
+          &::before {
+            content: 'Дні';
+            position: absolute;
+            top: -20px;
+            left: 3px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-cost {
+          position: relative;
+          padding: 0px 0px 0px 0px;
+          display: flex;
+          order: 1;
+          flex-basis: 50%;
+          margin: 0px 0px 45px 0px;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 2;
+
+          &::before {
+            content: 'Ціна ($$$)';
+            position: absolute;
+            top: -20px;
+            left: -2px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-link {
+          display: none;
+          margin: 0;
+        }
+
+        .collapse {
+          margin: 0;
+        }
+
+        &-modal {
+          margin: 0px 0px 42px 0px;
+
+          display: flex;
+          order: 2;
+          flex-basis: 100%;
+
+          &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--heading-color);
+          }
+        }
+      }
+    }
+
+    .price__cost-day {
+      display: none;
+    }
+
+    .price__cost-value {
+      display: none;
+    }
+
+    &__card-variety {
+      p {
+        width: 420px;
+      }
+    }
+
+    &__card-days {
+      &-first {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .price {
-        margin: 100px 19% 0px 19%;
+  .price {
+    margin: 100px 19% 0px 19%;
 
-        &__wrapper {
-            flex-direction: column;
-            padding: 0px 0px 42px 0px;
-
-        }
-
-        &__title {
-            margin: 0px 0px 16px 0px;
-
-        }
-
-        &__text {
-            max-width: 534px;
-        }
-
-        .price__cards-wrapper {
-            .price__card {
-                margin: 35px 0px 0px 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                &-variety {
-                    flex-basis: 100%;
-
-                    p {
-                        margin: 0px 0px 42px 0px;
-                    }
-                }
-
-                &-days {
-                    position: relative;
-                    display: flex;
-                    order: 0;
-                    flex-basis: 50%;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 1;
-
-                    &::before {
-                        content: 'Дни';
-                        position: absolute;
-                        top: -20px;
-                        left: 3px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-cost {
-                    position: relative;
-                    padding: 0px 0px 0px 0px;
-                    display: flex;
-                    order: 1;
-                    flex-basis: 50%;
-                    margin: 0px 0px 45px 0px;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 2;
-
-                    &::before {
-                        content: 'Цена ($$$)';
-                        position: absolute;
-                        top: -20px;
-                        left: -2px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-link {
-                    display: none;
-                    margin: 0;
-                }
-
-                .collapse {
-                    margin: 0;
-                }
-
-                &-modal {
-                    margin: 0px 0px 42px 0px;
-
-                    display: flex;
-                    order: 2;
-                    flex-basis: 100%;
-
-                    &-link {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        border-bottom: 1px solid var(--heading-color);
-                    }
-                }
-
-            }
-        }
-
-        .price__cost-day {
-            display: none;
-        }
-
-        .price__cost-value {
-            display: none;
-        }
-
-        &__card-variety {
-
-            p {
-                width: 420px;
-            }
-
-        }
-
-        &__card-days {
-            &-first {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px 0px;
-            }
-        }
+    &__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px;
     }
+
+    &__title {
+      margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+      max-width: 534px;
+    }
+
+    .price__cards-wrapper {
+      .price__card {
+        margin: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-variety {
+          flex-basis: 100%;
+
+          p {
+            margin: 0px 0px 42px 0px;
+          }
+        }
+
+        &-days {
+          position: relative;
+          display: flex;
+          order: 0;
+          flex-basis: 50%;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 1;
+
+          &::before {
+            content: 'Дні';
+            position: absolute;
+            top: -20px;
+            left: 3px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-cost {
+          position: relative;
+          padding: 0px 0px 0px 0px;
+          display: flex;
+          order: 1;
+          flex-basis: 50%;
+          margin: 0px 0px 45px 0px;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 2;
+
+          &::before {
+            content: 'Ціна ($$$)';
+            position: absolute;
+            top: -20px;
+            left: -2px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-link {
+          display: none;
+          margin: 0;
+        }
+
+        .collapse {
+          margin: 0;
+        }
+
+        &-modal {
+          margin: 0px 0px 42px 0px;
+
+          display: flex;
+          order: 2;
+          flex-basis: 100%;
+
+          &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--heading-color);
+          }
+        }
+      }
+    }
+
+    .price__cost-day {
+      display: none;
+    }
+
+    .price__cost-value {
+      display: none;
+    }
+
+    &__card-variety {
+      p {
+        width: 420px;
+      }
+    }
+
+    &__card-days {
+      &-first {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-    .price {
-        margin: 100px 19% 0px 19%;
+  .price {
+    margin: 100px 19% 0px 19%;
 
-        &__wrapper {
-            flex-direction: column;
-            padding: 0px 0px 42px 0px;
-
-        }
-
-        &__title {
-            margin: 0px 0px 16px 0px;
-
-        }
-
-        &__text {
-            max-width: 534px;
-        }
-
-        .price__cards-wrapper {
-            .price__card {
-                margin: 35px 0px 0px 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                &-variety {
-                    flex-basis: 100%;
-
-                    p {
-                        margin: 0px 0px 42px 0px;
-                    }
-                }
-
-                &-days {
-                    position: relative;
-                    display: flex;
-                    order: 0;
-                    flex-basis: 50%;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 1;
-
-                    &::before {
-                        content: 'Дни';
-                        position: absolute;
-                        top: -20px;
-                        left: 3px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-cost {
-                    position: relative;
-                    padding: 0px 0px 0px 0px;
-                    display: flex;
-                    order: 1;
-                    flex-basis: 50%;
-                    margin: 0px 0px 45px 0px;
-                    font-weight: 500;
-                    font-size: 78px;
-                    line-height: 107px;
-                    order: 2;
-
-                    &::before {
-                        content: 'Цена ($$$)';
-                        position: absolute;
-                        top: -20px;
-                        left: -2px;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-
-                &-link {
-                    display: none;
-                    margin: 0;
-                }
-
-                .collapse {
-                    margin: 0;
-                }
-
-                &-modal {
-                    margin: 0px 0px 42px 0px;
-
-                    display: flex;
-                    order: 2;
-                    flex-basis: 100%;
-
-                    &-link {
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: var(--heading-color);
-                        border-bottom: 1px solid var(--heading-color);
-                    }
-                }
-
-            }
-        }
-
-        .price__cost-day {
-            display: none;
-        }
-
-        .price__cost-value {
-            display: none;
-        }
-
-        &__card-variety {
-
-            p {
-                width: 420px;
-            }
-
-        }
-
-        &__card-days {
-            &-first {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-an {
-                margin: 0px 0px 0px 0px;
-            }
-
-            &-at {
-                margin: 0px 0px 0px 0px;
-            }
-        }
+    &__wrapper {
+      flex-direction: column;
+      padding: 0px 0px 42px 0px;
     }
+
+    &__title {
+      margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+      max-width: 534px;
+    }
+
+    .price__cards-wrapper {
+      .price__card {
+        margin: 35px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-variety {
+          flex-basis: 100%;
+
+          p {
+            margin: 0px 0px 42px 0px;
+          }
+        }
+
+        &-days {
+          position: relative;
+          display: flex;
+          order: 0;
+          flex-basis: 50%;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 1;
+
+          &::before {
+            content: 'Дні';
+            position: absolute;
+            top: -20px;
+            left: 3px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-cost {
+          position: relative;
+          padding: 0px 0px 0px 0px;
+          display: flex;
+          order: 1;
+          flex-basis: 50%;
+          margin: 0px 0px 45px 0px;
+          font-weight: 500;
+          font-size: 78px;
+          line-height: 107px;
+          order: 2;
+
+          &::before {
+            content: 'Ціна ($$$)';
+            position: absolute;
+            top: -20px;
+            left: -2px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        &-link {
+          display: none;
+          margin: 0;
+        }
+
+        .collapse {
+          margin: 0;
+        }
+
+        &-modal {
+          margin: 0px 0px 42px 0px;
+
+          display: flex;
+          order: 2;
+          flex-basis: 100%;
+
+          &-link {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--heading-color);
+          }
+        }
+      }
+    }
+
+    .price__cost-day {
+      display: none;
+    }
+
+    .price__cost-value {
+      display: none;
+    }
+
+    &__card-variety {
+      p {
+        width: 420px;
+      }
+    }
+
+    &__card-days {
+      &-first {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-an {
+        margin: 0px 0px 0px 0px;
+      }
+
+      &-at {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }

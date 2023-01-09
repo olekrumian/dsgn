@@ -26,9 +26,9 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 35px;
-  -webkit-transition: .3s linear;
-  -o-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 * {
@@ -51,7 +51,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
 
@@ -104,12 +104,12 @@ p {
   z-index: 1;
 }
 
-input[type="checkbox"].switch {
+input[type=checkbox].switch {
   position: absolute;
   margin: 16px 0 0 16px;
 }
 
-input[type="checkbox"].switch + label {
+input[type=checkbox].switch + label {
   position: relative;
   padding: 0px 0 0 50px;
   line-height: 2.1em;
@@ -118,7 +118,7 @@ input[type="checkbox"].switch + label {
   z-index: 41;
 }
 
-input[type="checkbox"].switch + label::before {
+input[type=checkbox].switch + label::before {
   content: "";
   position: absolute;
   display: block;
@@ -128,8 +128,7 @@ input[type="checkbox"].switch + label::before {
   /* x*5 */
   height: 30px;
   /* x*3 */
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  border-radius: 20px;
   /* x*2 */
   background-color: var(--heading-color);
   -webkit-transition: all 0.3s;
@@ -137,7 +136,7 @@ input[type="checkbox"].switch + label::before {
   transition: all 0.3s;
 }
 
-input[type="checkbox"].switch + label::after {
+input[type=checkbox].switch + label::after {
   content: "";
   position: absolute;
   display: block;
@@ -147,8 +146,7 @@ input[type="checkbox"].switch + label::after {
   /* x*3 */
   height: 22px;
   /* x*3 */
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   /* x*2 */
   background: var(--bg-color);
   border: none;
@@ -157,20 +155,20 @@ input[type="checkbox"].switch + label::after {
   transition: all 0.3s;
 }
 
-input[type="checkbox"].switch:checked + label::after {
+input[type=checkbox].switch:checked + label::after {
   margin-left: 15px;
 }
 
-input[type="checkbox"].switch:checked + label::before {
+input[type=checkbox].switch:checked + label::before {
   background: var(--heading-color);
 }
 
 @media (min-width: 1900px) {
-  input[type="checkbox"].switch {
+  input[type=checkbox].switch {
     position: absolute;
     margin: 16px 0 0 16px;
   }
-  input[type="checkbox"].switch + label {
+  input[type=checkbox].switch + label {
     position: relative;
     padding: 5px 0 0 50px;
     line-height: 2.1em;
@@ -178,7 +176,7 @@ input[type="checkbox"].switch:checked + label::before {
     height: 40px;
     z-index: 41;
   }
-  input[type="checkbox"].switch + label::before {
+  input[type=checkbox].switch + label::before {
     content: "";
     position: absolute;
     display: block;
@@ -188,15 +186,14 @@ input[type="checkbox"].switch:checked + label::before {
     /* x*5 */
     height: 40px;
     /* x*3 */
-    -webkit-border-radius: 20px;
-            border-radius: 20px;
+    border-radius: 20px;
     /* x*2 */
     background-color: var(--heading-color);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  input[type="checkbox"].switch + label::after {
+  input[type=checkbox].switch + label::after {
     content: "";
     position: absolute;
     display: block;
@@ -206,8 +203,7 @@ input[type="checkbox"].switch:checked + label::before {
     /* x*3 */
     height: 30px;
     /* x*3 */
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     /* x*2 */
     background: var(--bg-color);
     border: none;
@@ -215,48 +211,42 @@ input[type="checkbox"].switch:checked + label::before {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  input[type="checkbox"].switch:checked + label::after {
+  input[type=checkbox].switch:checked + label::after {
     margin-left: 20px;
   }
-  input[type="checkbox"].switch:checked + label::before {
+  input[type=checkbox].switch:checked + label::before {
     background: var(--heading-color);
   }
 }
-
 @media (max-width: 576px) {
   .header__toggle {
     margin: 3px 0px 0px -15px;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
-  input[type="checkbox"].switch + label {
+  input[type=checkbox].switch + label {
     position: relative;
     padding: 0px 0 0 50px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  input[type="checkbox"].switch + label {
+  input[type=checkbox].switch + label {
     position: relative;
     padding: 0px 0 0 15px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  input[type="checkbox"].switch + label {
+  input[type=checkbox].switch + label {
     position: relative;
     padding: 0px 0 0 15px;
   }
 }
-
 @media (min-width: 1920px) {
   .header__toggle {
     margin: 4px 0px 0px -70px;
     z-index: 1;
   }
 }
-
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -264,16 +254,13 @@ input[type="checkbox"].switch:checked + label::before {
 
 .header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 35px 0px 0px 0px;
@@ -281,16 +268,13 @@ input[type="checkbox"].switch:checked + label::before {
 
 .header__logo {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-weight: 800;
@@ -298,7 +282,6 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 38px;
   z-index: 41;
 }
-
 .header__logo span {
   display: inline-block;
   font-weight: 800;
@@ -306,7 +289,6 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 38px;
   color: var(--logo-bg-color);
 }
-
 .header__logo p {
   font-weight: 800;
   font-size: 28px;
@@ -317,14 +299,12 @@ input[type="checkbox"].switch:checked + label::before {
 .burger__menu-active {
   z-index: 1000;
 }
-
 .burger__menu-active .burger__menu-lines {
   background-color: transparent;
   -webkit-transition: 0.1s linear;
   -o-transition: 0.1s linear;
   transition: 0.1s linear;
 }
-
 .burger__menu-active .burger__menu-lines::before {
   top: 0;
   -webkit-transform: rotate(45deg);
@@ -336,7 +316,6 @@ input[type="checkbox"].switch:checked + label::before {
   transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
   transition: top 0.1s linear, transform 0.1s ease-in 0.1s, -webkit-transform 0.1s ease-in 0.1s;
 }
-
 .burger__menu-active .burger__menu-lines::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
@@ -348,17 +327,14 @@ input[type="checkbox"].switch:checked + label::before {
   transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
   transition: top 0.1s linear, transform 0.1s ease-in 0.1s, -webkit-transform 0.1s ease-in 0.1s;
 }
-
 .burger__menu-active .burger__menu-nav {
   opacity: 1;
   z-index: 20;
   margin: 0 auto;
 }
-
 .burger__menu-active .burger__menu-overlay {
   display: block;
 }
-
 .burger__menu-button {
   position: relative;
   display: block;
@@ -369,14 +345,12 @@ input[type="checkbox"].switch:checked + label::before {
   width: 30px;
   height: 23px;
 }
-
 .burger__menu-lines, .burger__menu-lines::after, .burger__menu-lines::before {
   position: absolute;
   width: 30px;
   height: 3px;
   background-color: var(--heading-color);
 }
-
 .burger__menu-lines {
   top: 50%;
   left: 50%;
@@ -387,7 +361,6 @@ input[type="checkbox"].switch:checked + label::before {
   -o-transition: 0.1s linear;
   transition: 0.1s linear;
 }
-
 .burger__menu-lines::before {
   content: "";
   top: -10px;
@@ -397,7 +370,6 @@ input[type="checkbox"].switch:checked + label::before {
   transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
   transition: transform 0.1s ease-in, top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
 }
-
 .burger__menu-lines::after {
   content: "";
   top: 10px;
@@ -407,7 +379,6 @@ input[type="checkbox"].switch:checked + label::before {
   transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
   transition: transform 0.1s ease-in, top 0.1s linear 0.1s, -webkit-transform 0.1s ease-in;
 }
-
 .burger__menu-nav {
   text-align: center;
   margin: 0 auto;
@@ -418,23 +389,20 @@ input[type="checkbox"].switch:checked + label::before {
   left: 0;
   z-index: -1;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
   background-color: var(--bg-color);
   overflow-y: auto;
   opacity: 0;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
-
 .burger__menu-link {
   font-family: "Manrope";
   font-style: normal;
@@ -444,11 +412,9 @@ input[type="checkbox"].switch:checked + label::before {
   color: var(--heading-color);
   margin: 0px 0px 60px 0px;
 }
-
 .burger__menu-link::last-child {
   margin: 0px 0px 0px 0px;
 }
-
 .burger__menu-overlay {
   display: none;
   position: fixed;
@@ -465,16 +431,13 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .header__logo {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     z-index: 41;
@@ -531,21 +494,19 @@ input[type="checkbox"].switch:checked + label::before {
     left: 0;
     z-index: -1;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
     background-color: var(--bg-color);
     overflow-y: auto;
     opacity: 0;
-    -webkit-transition: .2s linear;
-    -o-transition: .2s linear;
-    transition: .2s linear;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
   .burger__menu-link {
     font-family: "Manrope";
@@ -560,57 +521,46 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 @media (max-width: 576px) {
   .container {
     width: 90%;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .container {
     width: 90%;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .container {
     width: 644px;
   }
 }
-
 @media only screen and (min-device-width: 868px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .container {
     width: 900px;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .container {
     width: 900px;
   }
 }
-
 .intro {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .intro__wrapper {
-  -webkit-flex-basis: 50%;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   max-width: 490px;
   margin: 223px 0px 0px 0px;
   overflow: hidden;
 }
-
 .intro__header {
   margin: 0px 0px 23px 0px;
   font-family: "Manrope";
@@ -620,7 +570,6 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .intro__text {
   font-family: "Manrope";
   font-style: normal;
@@ -629,14 +578,11 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 26px;
   color: var(--font-color);
 }
-
 .intro__ellipse {
   display: block;
-  -webkit-flex-basis: 50%;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
-
 .intro__ellipse-one {
   position: relative;
   height: 599px;
@@ -644,11 +590,9 @@ input[type="checkbox"].switch:checked + label::before {
   background: #AF00ED;
   -webkit-filter: blur(90px);
           filter: blur(90px);
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   z-index: 4;
 }
-
 .intro__ellipse-one::before {
   content: "";
   position: absolute;
@@ -662,11 +606,9 @@ input[type="checkbox"].switch:checked + label::before {
   background: #00E9BF;
   -webkit-filter: blur(50px);
           filter: blur(50px);
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   z-index: 3;
 }
-
 .intro__ellipse-one::after {
   content: "";
   position: absolute;
@@ -680,26 +622,22 @@ input[type="checkbox"].switch:checked + label::before {
   background: #0095E9;
   -webkit-filter: blur(70px);
           filter: blur(70px);
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   z-index: 1;
 }
 
 @media (min-width: 1920px) {
   .intro {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .intro__wrapper {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     max-width: 640px;
     margin: 286px 0px 0px 0px;
     overflow: hidden;
@@ -720,9 +658,8 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .intro__ellipse {
     display: block;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .intro__ellipse-one {
     position: relative;
@@ -731,8 +668,7 @@ input[type="checkbox"].switch:checked + label::before {
     background: #AF00ED;
     -webkit-filter: blur(130px);
             filter: blur(130px);
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    border-radius: 100%;
     z-index: 4;
   }
   .intro__ellipse-one::before {
@@ -748,8 +684,7 @@ input[type="checkbox"].switch:checked + label::before {
     background: #00E9BF;
     -webkit-filter: blur(70px);
             filter: blur(70px);
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    border-radius: 100%;
     z-index: 3;
   }
   .intro__ellipse-one::after {
@@ -765,18 +700,15 @@ input[type="checkbox"].switch:checked + label::before {
     background: #0095E9;
     -webkit-filter: blur(110px);
             filter: blur(110px);
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    border-radius: 100%;
     z-index: 1;
   }
 }
-
 @media (max-width: 576px) {
   .intro__wrapper {
     margin: 100px 0px 0px 0px;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .intro__text {
     max-width: 330px;
@@ -785,7 +717,6 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .intro {
     margin: 0 10%;
@@ -793,15 +724,13 @@ input[type="checkbox"].switch:checked + label::before {
   .intro__wrapper {
     margin: 100px 0px 0px 0px;
     max-width: 543px;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .intro__ellipse {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .intro {
     margin: 0 6%;
@@ -809,15 +738,13 @@ input[type="checkbox"].switch:checked + label::before {
   .intro__wrapper {
     margin: 100px 0px 0px 0px;
     max-width: 543px;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .intro__ellipse {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .intro {
     margin: 0 19%;
@@ -825,15 +752,13 @@ input[type="checkbox"].switch:checked + label::before {
   .intro__wrapper {
     margin: 100px 0px 0px 0px;
     max-width: 543px;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .intro__ellipse {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .intro {
     margin: 0 19%;
@@ -841,89 +766,71 @@ input[type="checkbox"].switch:checked + label::before {
   .intro__wrapper {
     margin: 100px 0px 0px 0px;
     max-width: 543px;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .intro__ellipse {
     display: none;
   }
 }
-
 .concretely {
   margin: 200px 0px 0px 0px;
 }
-
 .concretely__wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .concretely__title {
   margin: 0px 0px 138px 0px;
 }
-
 .concretely__title h2 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .concretely__text {
   max-width: 392px;
 }
-
 .concretely__text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .concretely__cards {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 93px 0px 0px 0px;
 }
-
 .concretely__card {
-  -webkit-flex-basis: 28%;
-      -ms-flex-preferred-size: 28%;
-          flex-basis: 28%;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
 }
-
 .concretely__header {
   max-width: 286px;
   margin: 0px 0px 16px 0px;
 }
-
 .concretely__header h3 {
   font-weight: 800;
   font-size: 20px;
   line-height: 25px;
   color: var(--heading-color);
 }
-
 .concretely__text p {
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .concretely__line {
   width: 1px;
   height: 222px;
@@ -954,19 +861,16 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .concretely__cards {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 93px 0px 0px 0px;
   }
   .concretely__card {
-    -webkit-flex-basis: 22%;
-        -ms-flex-preferred-size: 22%;
-            flex-basis: 22%;
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
   }
   .concretely__card .concretely__header {
     max-width: 350px;
@@ -987,15 +891,13 @@ input[type="checkbox"].switch:checked + label::before {
     background-color: var(--heading-color);
   }
 }
-
 @media (max-width: 576px) {
   .concretely {
     margin: 100px 0px 0px 0px;
   }
   .concretely__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .concretely__title {
     margin: 0px 0px 16px 0px;
@@ -1008,7 +910,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1020,15 +921,13 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .concretely {
     margin: 100px 10% 0px 10%;
   }
   .concretely__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .concretely__title {
     margin: 0px 0px 16px 0px;
@@ -1044,7 +943,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1056,15 +954,13 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .concretely {
     margin: 100px 6% 0px 6%;
   }
   .concretely__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .concretely__title {
     margin: 0px 0px 16px 0px;
@@ -1080,7 +976,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1092,15 +987,13 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .concretely {
     margin: 100px 19% 0px 19%;
   }
   .concretely__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .concretely__title {
     margin: 0px 0px 16px 0px;
@@ -1116,7 +1009,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1128,15 +1020,13 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .concretely {
     margin: 100px 19% 0px 19%;
   }
   .concretely__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .concretely__title {
     margin: 0px 0px 16px 0px;
@@ -1152,7 +1042,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1164,89 +1053,71 @@ input[type="checkbox"].switch:checked + label::before {
     display: none;
   }
 }
-
 .plan {
   margin: 168px 0px 0px 0px;
 }
-
 .plan__wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .plan__title {
   margin: 0px 0px 138px 0px;
 }
-
 .plan__title h2 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .plan__text {
   max-width: 392px;
 }
-
 .plan__text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .plan__card {
   margin: 95px 0px 0px 0px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .plan__card-num {
   margin: 0px 0px 103px -15px;
   max-width: 205px;
 }
-
 .plan__card-num p {
   font-weight: 500;
   font-size: 198px;
   line-height: 150px;
   color: var(--heading-color);
 }
-
 .plan__card-title {
   min-width: 195px;
 }
-
 .plan__card-title h4 {
   font-weight: 800;
   font-size: 20px;
   line-height: 25px;
   color: var(--heading-color);
 }
-
 .plan__card-text {
   max-width: 393px;
 }
-
 .plan__card-text p {
   font-weight: normal;
   font-size: 16px;
@@ -1260,11 +1131,9 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .plan__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
@@ -1290,15 +1159,12 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__card {
     margin: 93px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     border-bottom: 1px solid var(--heading-color);
@@ -1332,7 +1198,6 @@ input[type="checkbox"].switch:checked + label::before {
     color: var(--font-color);
   }
 }
-
 @media (max-width: 576px) {
   .plan {
     margin: 100px 0px 0px 0px;
@@ -1340,7 +1205,6 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1356,7 +1220,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1367,7 +1230,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 16px 0px;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .plan {
     margin: 100px 10% 0px 10%;
@@ -1375,7 +1237,6 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1391,7 +1252,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1405,7 +1265,6 @@ input[type="checkbox"].switch:checked + label::before {
     max-width: 556px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .plan {
     margin: 100px 6% 0px 6%;
@@ -1413,7 +1272,6 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1429,7 +1287,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1443,7 +1300,6 @@ input[type="checkbox"].switch:checked + label::before {
     max-width: 556px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .plan {
     margin: 100px 19% 0px 19%;
@@ -1451,7 +1307,6 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1467,7 +1322,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1481,7 +1335,6 @@ input[type="checkbox"].switch:checked + label::before {
     max-width: 556px;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .plan {
     margin: 100px 19% 0px 19%;
@@ -1489,7 +1342,6 @@ input[type="checkbox"].switch:checked + label::before {
   .plan__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1505,7 +1357,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1519,49 +1370,39 @@ input[type="checkbox"].switch:checked + label::before {
     max-width: 556px;
   }
 }
-
 .price {
   margin: 200px 0px 0px 0px;
 }
-
 .price__wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .price__title {
   margin: 0px 0px 164px 0px;
 }
-
 .price__title h2 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .price__text {
   max-width: 393px;
 }
-
 .price__text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .price__cost-wrapper {
   position: relative;
 }
-
 .price__cost-wrapper .price__cost-day {
   position: absolute;
   font-weight: normal;
@@ -1571,7 +1412,6 @@ input[type="checkbox"].switch:checked + label::before {
   top: -37px;
   left: 423px;
 }
-
 .price__cost-wrapper .price__cost-value {
   position: absolute;
   font-weight: normal;
@@ -1581,20 +1421,16 @@ input[type="checkbox"].switch:checked + label::before {
   top: -37px;
   right: 310px;
 }
-
 .price__card {
   margin: 90px 0px 0px 0px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .price__card-about {
   width: 275px;
   font-weight: normal;
@@ -1602,7 +1438,6 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 26px;
   color: var(--font-color);
 }
-
 .price__card-link {
   cursor: pointer;
   position: relative;
@@ -1612,24 +1447,20 @@ input[type="checkbox"].switch:checked + label::before {
   color: var(--heading-color);
   border-bottom: 1px solid var(--heading-color);
 }
-
 .price__card-modal {
   display: none;
 }
-
 .price__card-variety .collapse:not(.show) {
   display: none;
 }
-
 .price__card-variety .collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height .35s ease;
-  -o-transition: height .35s ease;
-  transition: height .35s ease;
+  -webkit-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
 }
-
 .price__card-variety p {
   width: 275px;
   margin: 0px 0px 15px 0px;
@@ -1638,7 +1469,6 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .price__card-days {
   text-align: left;
   font-weight: 500;
@@ -1646,19 +1476,15 @@ input[type="checkbox"].switch:checked + label::before {
   line-height: 152px;
   color: var(--heading-color);
 }
-
 .price__card-days-first {
   margin: 0px 0px 0px -95px;
 }
-
 .price__card-days-an {
   margin: 0px 0px 0px -45px;
 }
-
 .price__card-days-at {
   margin: 0px 0px 0px -65px;
 }
-
 .price__card-cost {
   margin: 0px 0px 105px 0px;
   padding: 0px 40px 0px 0px;
@@ -1674,11 +1500,9 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .price__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
@@ -1725,11 +1549,9 @@ input[type="checkbox"].switch:checked + label::before {
   .price__card {
     margin: 90px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
@@ -1760,9 +1582,9 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     height: 0;
     overflow: hidden;
-    -webkit-transition: height .35s ease;
-    -o-transition: height .35s ease;
-    transition: height .35s ease;
+    -webkit-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
   }
   .price__card-variety p {
     width: 434px;
@@ -1796,7 +1618,6 @@ input[type="checkbox"].switch:checked + label::before {
     color: var(--heading-color);
   }
 }
-
 @media (max-width: 576px) {
   .price {
     margin: 100px 0px 0px 0px;
@@ -1804,7 +1625,6 @@ input[type="checkbox"].switch:checked + label::before {
   .price__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1818,17 +1638,14 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card {
     margin: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .price .price__cards-wrapper .price__card-variety p {
     margin: 0px 0px 42px 0px;
@@ -1836,26 +1653,22 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-days {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
   .price .price__cards-wrapper .price__card-days::before {
-    content: 'Дни';
+    content: "Дні";
     position: absolute;
     top: -20px;
     left: 3px;
@@ -1867,27 +1680,23 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     padding: 0px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 0px 0px 21px 0px;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .price .price__cards-wrapper .price__card-cost::before {
-    content: 'Цена ($$$)';
+    content: "Ціна ($$$)";
     position: absolute;
     top: -20px;
     left: -2px;
@@ -1905,16 +1714,13 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-modal {
     margin: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-modal-link {
     font-weight: normal;
@@ -1939,7 +1745,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .price {
     margin: 100px 10% 0px 10%;
@@ -1947,7 +1752,6 @@ input[type="checkbox"].switch:checked + label::before {
   .price__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -1961,22 +1765,18 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card {
     margin: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .price .price__cards-wrapper .price__card-variety {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-variety p {
     margin: 0px 0px 42px 0px;
@@ -1984,26 +1784,22 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-days {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
   .price .price__cards-wrapper .price__card-days::before {
-    content: 'Дни';
+    content: "Дні";
     position: absolute;
     top: -20px;
     left: 3px;
@@ -2015,27 +1811,23 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     padding: 0px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 0px 0px 21px 0px;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .price .price__cards-wrapper .price__card-cost::before {
-    content: 'Цена ($$$)';
+    content: "Ціна ($$$)";
     position: absolute;
     top: -20px;
     left: -2px;
@@ -2053,16 +1845,13 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-modal {
     margin: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-modal-link {
     font-weight: normal;
@@ -2087,7 +1876,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .price {
     margin: 100px 6% 0px 6%;
@@ -2095,7 +1883,6 @@ input[type="checkbox"].switch:checked + label::before {
   .price__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -2109,22 +1896,18 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card {
     margin: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .price .price__cards-wrapper .price__card-variety {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-variety p {
     margin: 0px 0px 42px 0px;
@@ -2132,26 +1915,22 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-days {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
   .price .price__cards-wrapper .price__card-days::before {
-    content: 'Дни';
+    content: "Дні";
     position: absolute;
     top: -20px;
     left: 3px;
@@ -2163,27 +1942,23 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     padding: 0px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 0px 0px 45px 0px;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .price .price__cards-wrapper .price__card-cost::before {
-    content: 'Цена ($$$)';
+    content: "Ціна ($$$)";
     position: absolute;
     top: -20px;
     left: -2px;
@@ -2201,16 +1976,13 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-modal {
     margin: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-modal-link {
     font-weight: normal;
@@ -2238,7 +2010,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .price {
     margin: 100px 19% 0px 19%;
@@ -2246,7 +2017,6 @@ input[type="checkbox"].switch:checked + label::before {
   .price__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -2260,22 +2030,18 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card {
     margin: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .price .price__cards-wrapper .price__card-variety {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-variety p {
     margin: 0px 0px 42px 0px;
@@ -2283,26 +2049,22 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-days {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
   .price .price__cards-wrapper .price__card-days::before {
-    content: 'Дни';
+    content: "Дні";
     position: absolute;
     top: -20px;
     left: 3px;
@@ -2314,27 +2076,23 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     padding: 0px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 0px 0px 45px 0px;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .price .price__cards-wrapper .price__card-cost::before {
-    content: 'Цена ($$$)';
+    content: "Ціна ($$$)";
     position: absolute;
     top: -20px;
     left: -2px;
@@ -2352,16 +2110,13 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-modal {
     margin: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-modal-link {
     font-weight: normal;
@@ -2389,7 +2144,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .price {
     margin: 100px 19% 0px 19%;
@@ -2397,7 +2151,6 @@ input[type="checkbox"].switch:checked + label::before {
   .price__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px 0px 42px 0px;
@@ -2411,22 +2164,18 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card {
     margin: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .price .price__cards-wrapper .price__card-variety {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-variety p {
     margin: 0px 0px 42px 0px;
@@ -2434,26 +2183,22 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-days {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
   .price .price__cards-wrapper .price__card-days::before {
-    content: 'Дни';
+    content: "Дні";
     position: absolute;
     top: -20px;
     left: 3px;
@@ -2465,27 +2210,23 @@ input[type="checkbox"].switch:checked + label::before {
     position: relative;
     padding: 0px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 0px 0px 45px 0px;
     font-weight: 500;
     font-size: 78px;
     line-height: 107px;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
   .price .price__cards-wrapper .price__card-cost::before {
-    content: 'Цена ($$$)';
+    content: "Ціна ($$$)";
     position: absolute;
     top: -20px;
     left: -2px;
@@ -2503,16 +2244,13 @@ input[type="checkbox"].switch:checked + label::before {
   .price .price__cards-wrapper .price__card-modal {
     margin: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .price .price__cards-wrapper .price__card-modal-link {
     font-weight: normal;
@@ -2540,105 +2278,83 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px 0px;
   }
 }
-
 .mywork {
   margin: 200px 0px 0px 0px;
 }
-
 .mywork__wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .mywork__title {
   margin: 0px 0px 138px 0px;
 }
-
 .mywork__title h2 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .mywork_text {
   max-width: 393px;
 }
-
 .mywork_text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .mywork__card {
   margin: 82px 0px 0px 0px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .mywork__card-name {
   margin: 0px 0px 156px 0px;
 }
-
 .mywork__card-name h3 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .mywork__card-description {
   max-width: 394px;
   margin: 0px 0px 0px 190px;
 }
-
 .mywork__card-description p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .mywork__card-icon svg line {
   stroke: var(--heading-color);
 }
-
 .mywork__card-links {
   display: none;
 }
-
 .mywork__card-link {
   color: var(--heading-color);
 }
-
 .mywork #laweta {
   position: absolute;
   width: 480px;
@@ -2651,11 +2367,9 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .mywork__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
@@ -2681,25 +2395,20 @@ input[type="checkbox"].switch:checked + label::before {
   .mywork__card {
     margin: 82px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     border-bottom: 1px solid var(--heading-color);
   }
   .mywork__card-name {
@@ -2736,7 +2445,6 @@ input[type="checkbox"].switch:checked + label::before {
     height: 300px;
   }
 }
-
 @media (max-width: 576px) {
   .mywork {
     margin: 100px 0px 0px 0px;
@@ -2745,7 +2453,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2759,20 +2466,16 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 35px 0px 0px 0px;
     padding: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2797,7 +2500,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .mywork {
     margin: 100px 10% 0px 10%;
@@ -2806,7 +2508,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2820,20 +2521,16 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 35px 0px 0px 0px;
     padding: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2858,7 +2555,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .mywork {
     margin: 100px 6% 0px 6%;
@@ -2867,7 +2563,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2881,20 +2576,16 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 35px 0px 0px 0px;
     padding: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2919,7 +2610,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .mywork {
     margin: 100px 19% 0px 19%;
@@ -2928,7 +2618,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2942,20 +2631,16 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 35px 0px 0px 0px;
     padding: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -2980,7 +2665,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .mywork {
     margin: 100px 19% 0px 19%;
@@ -2989,7 +2673,6 @@ input[type="checkbox"].switch:checked + label::before {
     padding: 0px 0px 42px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3003,20 +2686,16 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 35px 0px 0px 0px;
     padding: 0px 0px 42px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3041,99 +2720,81 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 .contact {
   margin: 200px 0px 0px 0px;
   padding: 0px 0px 240px 0px;
 }
-
 .contact__wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
 }
-
 .contact__title {
   margin: 0px 0px 138px 0px;
 }
-
 .contact__title h2 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
   color: var(--heading-color);
 }
-
 .contact__text {
   max-width: 393px;
 }
-
 .contact__text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .contact__card {
   padding: 82px 0px 0px 0px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid var(--heading-color);
   /* &:hover,
-        &:hover h3,
-        &:hover p,
-        &:hover svg line {
-            stroke: var(--bg-color);
-            color: var(--bg-color);
-            background-color: var(--heading-color);
-        } */
+  &:hover h3,
+  &:hover p,
+  &:hover svg line {
+      stroke: var(--bg-color);
+      color: var(--bg-color);
+      background-color: var(--heading-color);
+  } */
 }
-
 .contact__card-send {
   display: none;
 }
-
 .contact__card-social {
   margin: 0px 0px 156px 0px;
   width: 240px;
   color: var(--heading-color);
 }
-
 .contact__card-social h3 {
   font-weight: bold;
   font-size: 44px;
   line-height: 51px;
 }
-
 .contact__card-links {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0px 0px 0px -50px;
   width: 240px;
 }
-
 .contact__card-links p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: var(--font-color);
 }
-
 .contact__card-icon svg line {
   stroke: var(--heading-color);
 }
@@ -3145,11 +2806,9 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
@@ -3175,22 +2834,20 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 82px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     border-bottom: 1px solid var(--heading-color);
     /* &:hover,
-            &:hover h3,
-            &:hover p,
-            &:hover svg line {
-                stroke: var(--bg-color);
-                color: var(--bg-color);
-                background-color: var(--heading-color);
-            } */
+    &:hover h3,
+    &:hover p,
+    &:hover svg line {
+        stroke: var(--bg-color);
+        color: var(--bg-color);
+        background-color: var(--heading-color);
+    } */
   }
   .contact__card-send {
     display: none;
@@ -3209,7 +2866,6 @@ input[type="checkbox"].switch:checked + label::before {
     margin: 0px 0px 0px -80px;
     width: 240px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -3223,7 +2879,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 @media (max-width: 576px) {
   .contact {
     margin: 100px 0px 0px 0px;
@@ -3231,12 +2886,10 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3255,12 +2908,10 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3287,7 +2938,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .contact {
     margin: 100px 10% 0px 10%;
@@ -3295,12 +2945,10 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3319,12 +2967,10 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3351,7 +2997,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .contact {
     margin: 100px 6% 0px 6%;
@@ -3359,12 +3004,10 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3383,12 +3026,10 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3415,7 +3056,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .contact {
     margin: 100px 19% 0px 19%;
@@ -3423,12 +3063,10 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3447,12 +3085,10 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3479,7 +3115,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .contact {
     margin: 100px 19% 0px 19%;
@@ -3487,12 +3122,10 @@ input[type="checkbox"].switch:checked + label::before {
   }
   .contact__wrapper {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3511,12 +3144,10 @@ input[type="checkbox"].switch:checked + label::before {
   .contact__card {
     padding: 35px 0px 0px 0px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -3543,7 +3174,6 @@ input[type="checkbox"].switch:checked + label::before {
     border-bottom: 1px solid var(--heading-color);
   }
 }
-
 #uparrow {
   height: 80px;
   width: 40px;
@@ -3554,11 +3184,9 @@ input[type="checkbox"].switch:checked + label::before {
   z-index: 1;
   display: none;
 }
-
 #uparrow svg rect {
   stroke: var(--heading-color);
 }
-
 #uparrow svg path {
   stroke: var(--heading-color);
 }
@@ -3583,7 +3211,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 @media (max-width: 576px) {
   #uparrow {
     height: 80px;
@@ -3606,7 +3233,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   #uparrow {
     height: 80px;
@@ -3629,7 +3255,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #uparrow {
     height: 80px;
@@ -3652,7 +3277,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #uparrow {
     height: 80px;
@@ -3675,7 +3299,6 @@ input[type="checkbox"].switch:checked + label::before {
     stroke: var(--heading-color);
   }
 }
-
 .modal__land {
   display: none;
 }
@@ -3696,18 +3319,17 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: -190px;
     left: 0;
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__land-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi {
     display: block;
@@ -3716,18 +3338,17 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: -190px;
     left: 0;
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store {
     display: block;
@@ -3736,18 +3357,17 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: -190px;
     left: 0;
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__title {
     padding: 27px 0px 16px 15px;
@@ -3803,10 +3423,10 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    background-color: rgb(206, 206, 206);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -3815,7 +3435,6 @@ input[type="checkbox"].switch:checked + label::before {
     pointer-events: all;
   }
 }
-
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .modal__land {
     display: block;
@@ -3827,18 +3446,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__land-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__multi {
@@ -3851,18 +3469,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__store {
@@ -3875,18 +3492,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__title {
@@ -3943,10 +3559,10 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    background-color: rgb(206, 206, 206);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -3955,7 +3571,6 @@ input[type="checkbox"].switch:checked + label::before {
     pointer-events: all;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .modal__land {
     display: block;
@@ -3967,18 +3582,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__land-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__multi {
@@ -3991,18 +3605,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__store {
@@ -4015,18 +3628,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__title {
@@ -4083,10 +3695,10 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    background-color: rgb(206, 206, 206);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -4095,7 +3707,6 @@ input[type="checkbox"].switch:checked + label::before {
     pointer-events: all;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .modal__land {
     display: block;
@@ -4107,18 +3718,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__land-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__multi {
@@ -4131,18 +3741,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__store {
@@ -4155,18 +3764,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__title {
@@ -4223,10 +3831,10 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    background-color: rgb(206, 206, 206);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -4235,7 +3843,6 @@ input[type="checkbox"].switch:checked + label::before {
     pointer-events: all;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .modal__land {
     display: block;
@@ -4247,18 +3854,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__land-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__multi {
@@ -4271,18 +3877,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__multi-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__store {
@@ -4295,18 +3900,17 @@ input[type="checkbox"].switch:checked + label::before {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     background-color: var(--bg-color);
-    -webkit-border-radius: 20px 20px 0px 0px;
-            border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     z-index: 100;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
   }
   .modal__store-show {
     bottom: 0px;
-    -webkit-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s;
-    transition: ease-in-out .2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
   }
   .modal__title {
@@ -4363,10 +3967,10 @@ input[type="checkbox"].switch:checked + label::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    background-color: rgb(206, 206, 206);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
