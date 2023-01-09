@@ -12,7 +12,6 @@
 
 @media (max-width: 576px) {
   .modal {
-
     &__land {
       display: block;
       width: 100%;
@@ -22,11 +21,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
       }
     }
 
@@ -39,11 +38,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
       }
     }
 
@@ -56,11 +55,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
       }
     }
 
@@ -128,7 +127,6 @@
     }
   }
 
-
   .overlay {
     display: block;
     position: fixed;
@@ -138,9 +136,9 @@
     right: 0;
     left: 0;
     background-color: rgba(206, 206, 206, 1);
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -153,7 +151,6 @@
 
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   .modal {
-
     &__land {
       display: block;
       width: 70%;
@@ -164,11 +161,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -183,11 +180,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -202,11 +199,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -275,7 +272,6 @@
     }
   }
 
-
   .overlay {
     display: block;
     position: fixed;
@@ -285,9 +281,9 @@
     right: 0;
     left: 0;
     background-color: rgba(206, 206, 206, 1);
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -298,9 +294,8 @@
   }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .modal {
-
     &__land {
       display: block;
       width: 75%;
@@ -311,11 +306,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -330,11 +325,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -349,11 +344,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -422,7 +417,6 @@
     }
   }
 
-
   .overlay {
     display: block;
     position: fixed;
@@ -432,9 +426,9 @@
     right: 0;
     left: 0;
     background-color: rgba(206, 206, 206, 1);
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -447,7 +441,6 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .modal {
-
     &__land {
       display: block;
       width: 55%;
@@ -458,11 +451,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -477,11 +470,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -496,11 +489,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -569,7 +562,6 @@
     }
   }
 
-
   .overlay {
     display: block;
     position: fixed;
@@ -579,9 +571,9 @@
     right: 0;
     left: 0;
     background-color: rgba(206, 206, 206, 1);
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
@@ -594,7 +586,6 @@
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .modal {
-
     &__land {
       display: block;
       width: 55%;
@@ -605,11 +596,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -624,11 +615,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -643,11 +634,11 @@
       background-color: var(--bg-color);
       border-radius: 20px 20px 0px 0px;
       z-index: 100;
-      transition: ease-in-out .2s;
+      transition: ease-in-out 0.2s;
 
       &-show {
         bottom: 0px;
-        transition: ease-in-out .2s;
+        transition: ease-in-out 0.2s;
         overflow: hidden;
       }
     }
@@ -716,7 +707,6 @@
     }
   }
 
-
   .overlay {
     display: block;
     position: fixed;
@@ -726,9 +716,9 @@
     right: 0;
     left: 0;
     background-color: rgba(206, 206, 206, 1);
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0;
     pointer-events: none;
   }
