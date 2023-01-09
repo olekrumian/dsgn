@@ -1,6 +1,7 @@
 const button = document.querySelector('.switch')
 const element = document.querySelector('.main-element')
 const activeClass = 'main-theme-active'
+const main = document.querySelector('main')
 
 window.addEventListener('load', () => {
   localStorage.getItem('theme') && element.classList.add(activeClass)
